@@ -1,0 +1,21 @@
+@import "app-variables";
+
+$white:       #fff;
+$gray-100:    #f8f9fa;
+$gray-200:    #f6f6f6;
+$gray-300:    #e1e1e1;
+$gray-400:    #dcdcdc;
+$gray-500:    #989898;
+$gray-600:    #8c8c8c;
+$gray-700:    #5b5b5b;
+$gray-800:    #414141;
+$gray-900:    #262626;
+$primary:     $primary-color;
+
+$bg:          $white;
+$hover-bg:    $gray-200;
+$active-bg:   $gray-300;
+
+$body-color:  $gray-800;
+
+$dropdown-link-color:   $body-color;

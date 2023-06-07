@@ -1,0 +1,12 @@
+<div class="billboard" [style.background-image]="generateBackgroundImageUrl()">
+  <div class="billboard-inner app-container">
+    <div class="mx-2">
+      <ng-content></ng-content>
+    </div>
+  </div>
+  <div class="bottom-triangle" data-negative="true">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 50" preserveAspectRatio="none">
+      <path class="bottom-triangle-fill" d="M500,50L0,0v100h1000V0L500,50z"></path>
+    </svg>
+  </div>
+</div>
