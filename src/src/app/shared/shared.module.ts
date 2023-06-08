@@ -9,6 +9,10 @@ import { IconTextComponent } from './components/icon-text/icon-text.component';
 import { WalletIconComponent } from './components/icons/wallet-icon/wallet-icon.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { MarketIconComponent } from './components/icons/market-icon/market-icon.component';
+import { PhoneComponent } from './components/icons/phone/phone.component';
+import { BurgerComponent } from './components/icons/burger/burger.component';
+import {RouterLink} from "@angular/router";
+import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 
 
 
@@ -21,11 +25,15 @@ import { MarketIconComponent } from './components/icons/market-icon/market-icon.
     IconTextComponent,
     WalletIconComponent,
     NavbarComponent,
-    MarketIconComponent
+    MarketIconComponent,
+    PhoneComponent,
+    BurgerComponent
   ],
   imports: [
     CommonModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    RouterLink,
+    BrowserAnimationsModule
   ],
   exports: [
     ButtonComponent,

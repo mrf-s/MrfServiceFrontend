@@ -1,0 +1,37 @@
+@import "app-variables.scss";
+
+h1 {
+  @extend .fw-bold;
+  font-size: 2.75rem;
+}
+
+h2 {
+  @extend .fw-bold;
+  font-size: 2.25rem;
+}
+
+h3 {
+  @extend .fw-semibold;
+  font-size: 1.75rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+}
+
+.title {
+  @extend .fw-bold;
+}
+
+.app-link {
+  @extend .app-primary-interactive;
+  &:hover {
+    text-decoration: underline;
+  }
+  color: $app-black-color;
+}
+
+.app-caption {
+  @extend .app-muted-color;
+  font-size: 13px;
+}
