@@ -1,11 +1,13 @@
-<div class="app-navbar app-black-color bg-white container-fluid app-container flex-column">
-  <div class="d-flex align-items-center justify-content-between navbar-height w-100">
-    <app-navbar-logo></app-navbar-logo>
-    <app-navbar-navigations class="gap-4 d-none d-lg-flex"></app-navbar-navigations>
-    <div class="d-flex align-items-center gap-2">
-      <app-navbar-number></app-navbar-number>
-      <app-burger class="d-block ms-3 d-lg-none app-black-interactive" (click)="toggleBurger()"></app-burger>
+<div class="container-fluid app-navbar">
+  <div class="app-container d-flex flex-column">
+    <div class="d-flex align-items-center justify-content-between navbar-height w-100">
+      <app-navbar-logo></app-navbar-logo>
+      <app-navbar-navigations class="gap-4 d-none d-lg-flex"></app-navbar-navigations>
+      <div class="d-flex align-items-center gap-2">
+        <app-navbar-number></app-navbar-number>
+        <app-burger class="d-block ms-3 d-lg-none app-black-interactive" (click)="toggleBurger()"></app-burger>
+      </div>
     </div>
+    <app-navbar-responsive-navigation class="d-block" [show]="isBurgerTouched"></app-navbar-responsive-navigation>
   </div>
-  <app-navbar-responsive-navigation class="d-block" [show]="isBurgerTouched"></app-navbar-responsive-navigation>
 </div>

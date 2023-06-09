@@ -33,18 +33,20 @@ app-burger, app-clock-icon, app-market-icon, app-phone, app-shield-icon, app-wal
   margin-top: $app-navbar-size;
 }
 
-app-navbar {
-  @extend .shadow;
-  position: fixed;
-  width: 100%;
-  top: 0;
-  left: 0;
-  z-index: 3;
-}
-
 .app-card {
   @extend .card;
   @extend .shadow;
   @extend .p-4;
   border-radius: $app-border-radius;
+}
+
+app-navbar {
+  @extend .shadow;
+  @extend .bg-white;
+  @extend .app-black-color;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 3;
 }

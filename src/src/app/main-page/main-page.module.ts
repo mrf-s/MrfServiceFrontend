@@ -7,6 +7,7 @@ import { MainPageContactsComponent } from './main-page-contacts/main-page-contac
 import { MainPageSectionComponent } from './main-page-section/main-page-section.component';
 import { MainPageServicesComponent } from './main-page-services/main-page-services.component';
 import {NavbarModule} from "../navbar/navbar.module";
+import { MainPageServicesItemComponent } from './main-page-services/main-page-services-item/main-page-services-item.component';
 
 
 
@@ -16,7 +17,8 @@ import {NavbarModule} from "../navbar/navbar.module";
         MainPageBillboardComponent,
         MainPageContactsComponent,
         MainPageSectionComponent,
-        MainPageServicesComponent
+        MainPageServicesComponent,
+        MainPageServicesItemComponent
     ],
     exports: [
         MainPageComponent

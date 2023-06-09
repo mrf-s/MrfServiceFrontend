@@ -1,0 +1,15 @@
+﻿src/node_modules
+src/.angular
+src/.idea
+src/dist
+npm-debug.log
+Dockerfile*
+docker-compose*
+.dockerignore
+.git
+.gitignore
+.github
+.idea
+README.md
+LICENSE
+.vscode
