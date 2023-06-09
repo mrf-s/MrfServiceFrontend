@@ -1,5 +1,6 @@
-<div class="app-black-color container-fluid app-container">
-  <h2 class="mb-4">До нас <span class="app-primary-color">легко добраться</span></h2>
+<ng-template #header>До нас <span class="app-primary-color">легко добраться</span></ng-template>
+
+<app-main-page-section [sectionHeader]="header">
   <div class="row row-gap-5">
     <div class="col-12 col-md-6">
       <div class="app-card app-black-color d-inline-block">
@@ -22,8 +23,7 @@
         <div class="mb-4">
           <p class="app-caption mb-2">Время работы</p>
           <div class="fw-medium mb-2">
-            <p>Пн-Пт с 10:00 до 21:00</p>
-            <p>Сб-Вс с 10:00 до 20:00</p>
+            <p>Пн-Вс с 10:00 до 24:00</p>
           </div>
           <hr>
         </div>
@@ -31,9 +31,9 @@
       </div>
     </div>
     <div class="col-12 col-md-6">
-      <div class="p-2">
-        <div id="map" class="w-100 h-100 shadow" style="min-height: 500px"></div>
+      <div class="p-2 h-100">
+        <div id="map" class="w-100 h-100 shadow" style="min-height: 300px"></div>
       </div>
     </div>
   </div>
-</div>
+</app-main-page-section>

@@ -4,6 +4,9 @@ import { MainPageComponent } from './main-page.component';
 import {SharedModule} from "../shared/shared.module";
 import { MainPageBillboardComponent } from './main-page-billboard/main-page-billboard.component';
 import { MainPageContactsComponent } from './main-page-contacts/main-page-contacts.component';
+import { MainPageSectionComponent } from './main-page-section/main-page-section.component';
+import { MainPageServicesComponent } from './main-page-services/main-page-services.component';
+import {NavbarModule} from "../navbar/navbar.module";
 
 
 
@@ -11,15 +14,18 @@ import { MainPageContactsComponent } from './main-page-contacts/main-page-contac
     declarations: [
         MainPageComponent,
         MainPageBillboardComponent,
-        MainPageContactsComponent
+        MainPageContactsComponent,
+        MainPageSectionComponent,
+        MainPageServicesComponent
     ],
     exports: [
         MainPageComponent
     ],
-  imports: [
-    CommonModule,
-    NgOptimizedImage,
-    SharedModule
-  ]
+    imports: [
+        CommonModule,
+        NgOptimizedImage,
+        SharedModule,
+        NavbarModule
+    ]
 })
 export class MainPageModule { }
