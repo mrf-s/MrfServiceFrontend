@@ -17,6 +17,7 @@ import { AirpodsIconComponent } from './components/icons/airpods-icon/airpods-ic
 import { SmartphoneIconComponent } from './components/icons/smartphone-icon/smartphone-icon.component';
 import { ComputerIconComponent } from './components/icons/computer-icon/computer-icon.component';
 import { WindowsIconComponent } from './components/icons/windows-icon/windows-icon.component';
+import { PremiumIconComponent } from './components/icons/premium-icon/premium-icon.component';
 
 
 @NgModule({
@@ -34,7 +35,8 @@ import { WindowsIconComponent } from './components/icons/windows-icon/windows-ic
     AirpodsIconComponent,
     SmartphoneIconComponent,
     ComputerIconComponent,
-    WindowsIconComponent
+    WindowsIconComponent,
+    PremiumIconComponent
   ],
   imports: [
     CommonModule,
@@ -55,7 +57,8 @@ import { WindowsIconComponent } from './components/icons/windows-icon/windows-ic
     AirpodsIconComponent,
     SmartphoneIconComponent,
     ComputerIconComponent,
-    WindowsIconComponent
+    WindowsIconComponent,
+    PremiumIconComponent
   ]
 })
 export class SharedModule { }

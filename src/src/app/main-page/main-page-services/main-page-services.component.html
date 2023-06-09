@@ -3,6 +3,7 @@
 <ng-template #smartphone><app-smartphone-icon/></ng-template>
 <ng-template #computer><app-computer-icon/></ng-template>
 <ng-template #windows><app-windows-icon/></ng-template>
+<ng-template #premium><app-premium-icon/></ng-template>
 
 
 <ng-template #h>Наши <span class="app-primary-color">услуги</span></ng-template>
@@ -44,6 +45,12 @@
       payload="Быстрая установка всех необходимых программ. Виндовс, офис и другие программы по вашему запросу"
       price="от 299 ₽"
       [icon]="windows"/>
+
+    <app-main-page-services-item
+      class="col-12 col-sm-6 col-lg-4"
+      title="Аксессуары для смартфона"
+      payload="Вы можете купить у нас аксессуары для вашего смартфона: плёнки, защитные стекла для экрана премиум класса и тд"
+      price="от 49 ₽"
+      [icon]="premium"/>
   </div>
 </app-main-page-section>
-
