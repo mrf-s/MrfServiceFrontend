@@ -1,18 +1,48 @@
+<ng-template #copyIcon><app-printer-icon/></ng-template>
+<ng-template #airpods><app-airpods-icon/></ng-template>
+<ng-template #smartphone><app-smartphone-icon/></ng-template>
+<ng-template #computer><app-computer-icon/></ng-template>
+<ng-template #windows><app-windows-icon/></ng-template>
+
+
 <ng-template #h>Наши <span class="app-primary-color">услуги</span></ng-template>
+
 <app-main-page-section [sectionHeader]="h">
-<!--  <div class="row">-->
-<!--    <div class="col-12 col-md-6">-->
-<!--      <app-main-page-services-item [price]="400">Печать ч/б документов, белая бумага</app-main-page-services-item>-->
-<!--      <app-main-page-services-item [price]="400">Печать ч/б документов, белая бумага</app-main-page-services-item>-->
-<!--      <app-main-page-services-item [price]="400">Печать ч/б документов, белая бумага</app-main-page-services-item>-->
-<!--      <app-main-page-services-item [price]="400">Печать ч/б документов, белая бумага</app-main-page-services-item>-->
-<!--    </div>-->
-<!--    <div class="col-12 col-md-6">-->
-<!--      <app-main-page-services-item [price]="400">Печать ч/б документов, белая бумага</app-main-page-services-item>-->
-<!--      <app-main-page-services-item [price]="400">Печать ч/б документов, белая бумага</app-main-page-services-item>-->
-<!--      <app-main-page-services-item [price]="400">Печать ч/б документов, белая бумага</app-main-page-services-item>-->
-<!--      <app-main-page-services-item [price]="400">Печать ч/б документов, белая бумага</app-main-page-services-item>-->
-<!--    </div>-->
-<!--  </div>-->
-  <div class="app-card" style="height: 1000px"></div>
+  <div class="row align-items-stretch row-gap-4">
+
+    <app-main-page-services-item
+      class="col-12 col-sm-6 col-lg-4"
+      title="Копировальные услуги"
+      payload="Печать ч/б документов, белая бумага, сканирование документов, после 21:00 с доставкой"
+      price="5 ₽"
+      [icon]="copyIcon"/>
+
+    <app-main-page-services-item
+      class="col-12 col-sm-6 col-lg-4"
+      title="Профессиональная чистка наушников"
+      payload="Чистка от пыли, грязи и остатков. Улучшает качество и громкость звука"
+      price="299 ₽"
+      [icon]="airpods"/>
+
+    <app-main-page-services-item
+      class="col-12 col-sm-6 col-lg-4"
+      title="Ремонт смартфонов"
+      payload="Ремонт смартфонов любой сложности. Замена батареи, фронтальной, основной камеры. Ремонт экрана, тачскрина сматрфона и тд"
+      price="от 899 ₽"
+      [icon]="smartphone"/>
+
+    <app-main-page-services-item
+      class="col-12 col-sm-6 col-lg-4"
+      title="Ремонт компьютеров и ноутбуков"
+      payload="Ремонт техники любой сложности. Замена аккамулятора и термопасты. Чистка от пыли и лишних файлов."
+      price="от 899 ₽"
+      [icon]="computer"/>
+
+    <app-main-page-services-item
+      class="col-12 col-sm-6 col-lg-4"
+      title="Установка виндовс, офис и других программ"
+      payload="Быстрая установка всех необходимых программ. Виндовс, офис и другие программы по вашему запросу"
+      price="от 299 ₽"
+      [icon]="windows"/>
+  </div>
 </app-main-page-section>

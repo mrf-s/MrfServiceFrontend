@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {ClockIconComponent} from "../../shared/components/icons/clock-icon/clock-icon.component";
 
 @Component({
   selector: 'app-main-page-services',
@@ -7,4 +8,5 @@ import { Component } from '@angular/core';
 })
 export class MainPageServicesComponent {
 
+  protected readonly ClockIconComponent = ClockIconComponent;
 }

@@ -1,10 +1,13 @@
-import {Component, Input} from '@angular/core';
+import {Component, Input, TemplateRef} from '@angular/core';
 
 @Component({
-  selector: 'app-main-page-services-item[price]',
+  selector: 'app-main-page-services-item[title][payload][icon][price]',
   templateUrl: './main-page-services-item.component.html',
   styleUrls: ['./main-page-services-item.component.scss']
 })
 export class MainPageServicesItemComponent {
-  @Input() price!: number;
+  @Input() icon!: TemplateRef<any>;
+  @Input() title!: string;
+  @Input() payload!: string;
+  @Input() price!: string;
 }

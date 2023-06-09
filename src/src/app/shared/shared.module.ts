@@ -12,6 +12,11 @@ import { PhoneComponent } from './components/icons/phone/phone.component';
 import { BurgerComponent } from './components/icons/burger/burger.component';
 import {RouterLink} from "@angular/router";
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
+import { PrinterIconComponent } from './components/icons/printer-icon/printer-icon.component';
+import { AirpodsIconComponent } from './components/icons/airpods-icon/airpods-icon.component';
+import { SmartphoneIconComponent } from './components/icons/smartphone-icon/smartphone-icon.component';
+import { ComputerIconComponent } from './components/icons/computer-icon/computer-icon.component';
+import { WindowsIconComponent } from './components/icons/windows-icon/windows-icon.component';
 
 
 @NgModule({
@@ -24,7 +29,12 @@ import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
     WalletIconComponent,
     MarketIconComponent,
     PhoneComponent,
-    BurgerComponent
+    BurgerComponent,
+    PrinterIconComponent,
+    AirpodsIconComponent,
+    SmartphoneIconComponent,
+    ComputerIconComponent,
+    WindowsIconComponent
   ],
   imports: [
     CommonModule,
@@ -40,7 +50,12 @@ import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
     IconTextComponent,
     WalletIconComponent,
     PhoneComponent,
-    BurgerComponent
+    BurgerComponent,
+    PrinterIconComponent,
+    AirpodsIconComponent,
+    SmartphoneIconComponent,
+    ComputerIconComponent,
+    WindowsIconComponent
   ]
 })
 export class SharedModule { }

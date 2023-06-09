@@ -18,30 +18,37 @@ button {
   white-space: nowrap;
 }
 
-.app-container {
+.container-fluid {
   max-width: $app-site-content-max-width;
   margin-inline: auto;
   width: 100%;
 }
 
-app-burger, app-clock-icon, app-market-icon, app-phone, app-shield-icon, app-wallet-icon {
+app-burger, app-clock-icon, app-market-icon, app-phone, app-shield-icon, app-wallet-icon, app-printer-icon, app-airpods-icon, app-smartphone-icon, app-computer-icon, app-windows-icon {
   font-size: 2rem;
   color: $app-primary-color;
+  fill: $app-primary-color;
 }
 
 .after-navbar {
   margin-top: $app-navbar-size;
 }
 
+.app-shadow {
+  @extend .shadow;
+}
+
 .app-card {
   @extend .card;
-  @extend .shadow;
+  @extend .app-shadow;
   @extend .p-4;
+  @extend .app-black-color;
   border-radius: $app-border-radius;
+  border-width: 0;
 }
 
 app-navbar {
-  @extend .shadow;
+  @extend .app-shadow;
   @extend .bg-white;
   @extend .app-black-color;
   position: fixed;
