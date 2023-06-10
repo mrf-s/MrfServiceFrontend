@@ -20,6 +20,13 @@ import { PremiumIconComponent } from './components/icons/premium-icon/premium-ic
 import { LogoComponent } from './components/logo/logo.component';
 import { NumberComponent } from './components/number/number.component';
 import { NumberNavigateDirective } from './directives/number-navigate.directive';
+import { TelegramIconComponent } from './components/icons/telegram-icon/telegram-icon.component';
+import { VkIconComponent } from './components/icons/vk-icon/vk-icon.component';
+import { WhatsUpIconComponent } from './components/icons/whats-up-icon/whats-up-icon.component';
+import { NavigateTelegramDirective } from './directives/navigate-telegram.directive';
+import { NavigateVkDirective } from './directives/navigate-vk.directive';
+import { NavigateWhatsUpDirective } from './directives/navigate-whats-up.directive';
+import { ContactCirclesComponent } from './components/contact-circles/contact-circles.component';
 
 
 @NgModule({
@@ -40,7 +47,14 @@ import { NumberNavigateDirective } from './directives/number-navigate.directive'
     PremiumIconComponent,
     LogoComponent,
     NumberComponent,
-    NumberNavigateDirective
+    NumberNavigateDirective,
+    TelegramIconComponent,
+    VkIconComponent,
+    WhatsUpIconComponent,
+    NavigateTelegramDirective,
+    NavigateVkDirective,
+    NavigateWhatsUpDirective,
+    ContactCirclesComponent
   ],
   imports: [
     CommonModule,
@@ -64,7 +78,8 @@ import { NumberNavigateDirective } from './directives/number-navigate.directive'
     PremiumIconComponent,
     LogoComponent,
     NumberNavigateDirective,
-    NumberComponent
+    NumberComponent,
+    ContactCirclesComponent
   ]
 })
 export class SharedModule { }
