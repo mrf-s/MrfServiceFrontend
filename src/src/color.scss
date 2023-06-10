@@ -4,6 +4,10 @@
   color: $app-primary-color;
 }
 
+.app-bg-primary-dark-color {
+  background-color: $app-primary-color-dark;
+}
+
 .app-white-color {
   color: $app-white-color;
 }
@@ -42,6 +46,19 @@ app-burger {
   }
   &:active {
     color: $app-black-color-click;
+    transition: color $app-transition;
+  }
+}
+
+.app-white-interactive {
+  color: $app-white-color;
+  cursor: pointer;
+  &:hover {
+    color: $app-white-color-hover;
+    transition: color $app-transition;
+  }
+  &:active {
+    color: $app-white-color-click;
     transition: color $app-transition;
   }
 }

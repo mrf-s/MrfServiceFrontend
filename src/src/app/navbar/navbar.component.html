@@ -1,7 +1,8 @@
 <div class="container-fluid app-navbar">
-  <div class="app-container d-flex flex-column">
+  <div class="d-flex flex-column">
     <div class="d-flex align-items-center justify-content-between navbar-height w-100">
-      <app-navbar-logo></app-navbar-logo>
+      <app-logo class="d-none d-sm-block"></app-logo>
+      <app-logo class="d-block d-sm-none" [shorten]="true"></app-logo>
       <app-navbar-navigations class="gap-4 d-none d-lg-flex"></app-navbar-navigations>
       <div class="d-flex align-items-center gap-2">
         <app-navbar-number></app-navbar-number>

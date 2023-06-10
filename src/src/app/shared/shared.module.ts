@@ -5,7 +5,6 @@ import { BillboardComponent } from './components/billboard/billboard.component';
 import { ClockIconComponent } from './components/icons/clock-icon/clock-icon.component';
 import {FontAwesomeModule} from "@fortawesome/angular-fontawesome";
 import { ShieldIconComponent } from './components/icons/shield-icon/shield-icon.component';
-import { IconTextComponent } from './components/icon-text/icon-text.component';
 import { WalletIconComponent } from './components/icons/wallet-icon/wallet-icon.component';
 import { MarketIconComponent } from './components/icons/market-icon/market-icon.component';
 import { PhoneComponent } from './components/icons/phone/phone.component';
@@ -18,6 +17,9 @@ import { SmartphoneIconComponent } from './components/icons/smartphone-icon/smar
 import { ComputerIconComponent } from './components/icons/computer-icon/computer-icon.component';
 import { WindowsIconComponent } from './components/icons/windows-icon/windows-icon.component';
 import { PremiumIconComponent } from './components/icons/premium-icon/premium-icon.component';
+import { LogoComponent } from './components/logo/logo.component';
+import { NumberComponent } from './components/number/number.component';
+import { NumberNavigateDirective } from './directives/number-navigate.directive';
 
 
 @NgModule({
@@ -26,7 +28,6 @@ import { PremiumIconComponent } from './components/icons/premium-icon/premium-ic
     BillboardComponent,
     ClockIconComponent,
     ShieldIconComponent,
-    IconTextComponent,
     WalletIconComponent,
     MarketIconComponent,
     PhoneComponent,
@@ -36,7 +37,10 @@ import { PremiumIconComponent } from './components/icons/premium-icon/premium-ic
     SmartphoneIconComponent,
     ComputerIconComponent,
     WindowsIconComponent,
-    PremiumIconComponent
+    PremiumIconComponent,
+    LogoComponent,
+    NumberComponent,
+    NumberNavigateDirective
   ],
   imports: [
     CommonModule,
@@ -49,7 +53,6 @@ import { PremiumIconComponent } from './components/icons/premium-icon/premium-ic
     BillboardComponent,
     ClockIconComponent,
     ShieldIconComponent,
-    IconTextComponent,
     WalletIconComponent,
     PhoneComponent,
     BurgerComponent,
@@ -58,7 +61,10 @@ import { PremiumIconComponent } from './components/icons/premium-icon/premium-ic
     SmartphoneIconComponent,
     ComputerIconComponent,
     WindowsIconComponent,
-    PremiumIconComponent
+    PremiumIconComponent,
+    LogoComponent,
+    NumberNavigateDirective,
+    NumberComponent
   ]
 })
 export class SharedModule { }

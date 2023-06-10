@@ -1,5 +1,5 @@
 <app-billboard class="app-white-color" backgroundImageUrl="../../assets/smartphone-repair.jpg">
-  <div class="container-fluid app-container">
+  <div class="container-fluid">
     <div class="row align-items-center row-gap-4">
       <div class="col-12 col-md-6">
         <h1 class="mb-4">Сервисный центр в Казани</h1>
@@ -9,12 +9,24 @@
       </div>
       <div class="col-12 col-md-6">
         <div class="fw-bold">
-          <ng-template #clockIcon><app-clock-icon/></ng-template>
-          <app-icon-text class="d-block mb-2" [iconRef]="clockIcon">30 мин среднее время ремонта</app-icon-text>
-          <ng-template #shieldIcon><app-shield-icon/></ng-template>
-          <app-icon-text class="d-block mb-2" [iconRef]="shieldIcon">Гарантия на все виды работ и детали</app-icon-text>
-          <ng-template #walletIcon><app-wallet-icon/></ng-template>
-          <app-icon-text [iconRef]="walletIcon">Оплата после ремонта, картой или наличными</app-icon-text>
+          <div class="d-flex align-items-center gap-3">
+            <div class="align-self-start">
+              <app-clock-icon/>
+            </div>
+            <span>30 мин среднее время работы, можем сделать при вас</span>
+          </div>
+          <div class="d-flex align-items-center gap-3">
+            <div class="align-self-start">
+              <app-shield-icon/>
+            </div>
+            <span>Гарантия на все виды работ, детали и аксессуары</span>
+          </div>
+          <div class="d-flex align-items-center gap-3">
+            <div class="align-self-start">
+              <app-wallet-icon/>
+            </div>
+            <span>Оплата после услуги, картой или наличными</span>
+          </div>
         </div>
       </div>
     </div>

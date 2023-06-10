@@ -23,13 +23,31 @@ h4 {
   @extend .fw-bold;
 }
 
-.app-link {
+.app-link, a {
   @extend .app-primary-interactive;
+  text-decoration: none;
   &:hover {
     text-decoration: underline;
   }
+
+  &:not([href]):not([class]):hover {
+    color: $app-primary-color-hover;
+    text-decoration: underline;
+  }
+
+  &:not([href]):not([class]):active {
+    color: $app-primary-color-click;
+    text-decoration: underline;
+  }
+
   color: $app-black-color;
 }
+
+//
+//a:not([href]):not([class]), a:not([href]):not([class]):hover {
+//  color: inherit;
+//  text-decoration: inherit;
+//}
 
 .app-caption {
   @extend .app-muted-color;

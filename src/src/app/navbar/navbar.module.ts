@@ -5,7 +5,6 @@ import {SharedModule} from "../shared/shared.module";
 import {RouterLink} from "@angular/router";
 import { NavbarNavigationsComponent } from './navbar-navigations/navbar-navigations.component';
 import { NavbarResponsiveNavigationComponent } from './navbar-responsive-navigation/navbar-responsive-navigation.component';
-import { NavbarLogoComponent } from './navbar-logo/navbar-logo.component';
 import { NavbarNumberComponent } from './navbar-number/navbar-number.component';
 
 
@@ -15,7 +14,6 @@ import { NavbarNumberComponent } from './navbar-number/navbar-number.component';
     NavbarComponent,
     NavbarNavigationsComponent,
     NavbarResponsiveNavigationComponent,
-    NavbarLogoComponent,
     NavbarNumberComponent
   ],
   exports: [

@@ -30,7 +30,11 @@ app-burger, app-clock-icon, app-market-icon, app-phone, app-shield-icon, app-wal
   fill: $app-primary-color;
 }
 
-.after-navbar {
+.app-no-select {
+  user-select: none;
+}
+
+.app-after-navbar {
   margin-top: $app-navbar-size;
 }
 
