@@ -1,0 +1,14 @@
+<div class="app-card h-100 justify-content-between">
+  <div>
+    <app-stars class="mb-3 d-block" [stars]="review.stars"></app-stars>
+    <p class="mb-3" style="overflow: hidden; display: -webkit-box; -webkit-line-clamp: 6; -webkit-box-orient: vertical;">{{review.message}}</p>
+  </div>
+  <div class="d-flex gap-3 align-items-center">
+    <app-yandex-icon *ngIf="review.reviewPlatform === 'yandex'"/>
+    <app-twogis-icon style="font-size: 3rem" *ngIf="review.reviewPlatform === '2gis'"/>
+    <div>
+      <p class="app-caption">{{review.date | date}}</p>
+      <p class="fw-medium">{{review.name}}</p>
+    </div>
+  </div>
+</div>

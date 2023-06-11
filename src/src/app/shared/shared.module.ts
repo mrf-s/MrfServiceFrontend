@@ -27,6 +27,14 @@ import { NavigateTelegramDirective } from './directives/navigate-telegram.direct
 import { NavigateVkDirective } from './directives/navigate-vk.directive';
 import { NavigateWhatsUpDirective } from './directives/navigate-whats-up.directive';
 import { ContactCirclesComponent } from './components/contact-circles/contact-circles.component';
+import { SolidStarIconComponent } from './components/icons/solid-star-icon/solid-star-icon.component';
+import { HollowStarIconComponent } from './components/icons/hollow-star-icon/hollow-star-icon.component';
+import { StarsComponent } from './components/stars/stars.component';
+import { SemiStarIconComponent } from './components/icons/semi-star-icon/semi-star-icon.component';
+import { ReviewComponent } from './components/review/review.component';
+import { ChevronUpIconComponent } from './components/icons/chevron-up-icon/chevron-up-icon.component';
+import { YandexIconComponent } from './components/icons/yandex-icon/yandex-icon.component';
+import { TwogisIconComponent } from './components/icons/twogis-icon/twogis-icon.component';
 
 
 @NgModule({
@@ -54,7 +62,15 @@ import { ContactCirclesComponent } from './components/contact-circles/contact-ci
     NavigateTelegramDirective,
     NavigateVkDirective,
     NavigateWhatsUpDirective,
-    ContactCirclesComponent
+    ContactCirclesComponent,
+    SolidStarIconComponent,
+    HollowStarIconComponent,
+    StarsComponent,
+    SemiStarIconComponent,
+    ReviewComponent,
+    ChevronUpIconComponent,
+    YandexIconComponent,
+    TwogisIconComponent
   ],
   imports: [
     CommonModule,
@@ -79,7 +95,10 @@ import { ContactCirclesComponent } from './components/contact-circles/contact-ci
     LogoComponent,
     NumberNavigateDirective,
     NumberComponent,
-    ContactCirclesComponent
+    ContactCirclesComponent,
+    StarsComponent,
+    ReviewComponent,
+    ChevronUpIconComponent
   ]
 })
 export class SharedModule { }

@@ -8,6 +8,8 @@ import { MainPageSectionComponent } from './main-page-section/main-page-section.
 import { MainPageServicesComponent } from './main-page-services/main-page-services.component';
 import {NavbarModule} from "../navbar/navbar.module";
 import { MainPageServicesItemComponent } from './main-page-services/main-page-services-item/main-page-services-item.component';
+import { MainPageReviewsComponent } from './main-page-reviews/main-page-reviews.component';
+import {CarouselModule} from "ngx-owl-carousel-o";
 
 
 
@@ -18,7 +20,8 @@ import { MainPageServicesItemComponent } from './main-page-services/main-page-se
         MainPageContactsComponent,
         MainPageSectionComponent,
         MainPageServicesComponent,
-        MainPageServicesItemComponent
+        MainPageServicesItemComponent,
+        MainPageReviewsComponent
     ],
     exports: [
         MainPageComponent
@@ -27,7 +30,8 @@ import { MainPageServicesItemComponent } from './main-page-services/main-page-se
         CommonModule,
         NgOptimizedImage,
         SharedModule,
-        NavbarModule
+        NavbarModule,
+      CarouselModule
     ]
 })
 export class MainPageModule { }

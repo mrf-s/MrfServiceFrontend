@@ -1,0 +1,19 @@
+<ng-template #h>Отзывы <span class="app-primary-color">наших клиентов</span></ng-template>
+
+<app-main-page-section [sectionHeader]="h">
+  <owl-carousel-o [options]="owlCarouselOptions">
+    <ng-container *ngFor="let r of reviews">
+      <ng-template carouselSlide>
+        <app-review class="p-4 d-block h-100" [review]="r"></app-review>
+      </ng-template>
+    </ng-container>
+  </owl-carousel-o>
+
+<!--  <div class="d-flex gap-3 align-items-center justify-content-between" style="height: 300px">-->
+<!--    <app-chevron-up-icon (click)="decreaseAnchor()" class="app-primary-interactive" style="transform: rotate(-90deg)"></app-chevron-up-icon>-->
+<!--    <app-review class="d-none d-lg-block" *ngFor="let r of threeReviews" [review]="r"/>-->
+<!--    <app-review class="d-none d-md-block d-lg-none" *ngFor="let i of twoReviews" [review]="i"/>-->
+<!--    <app-review class="d-block d-md-none" *ngFor="let i of oneReview" [review]="i"/>-->
+<!--    <app-chevron-up-icon (click)="increaseAnchor()" class="app-primary-interactive" style="transform: rotate(90deg)"></app-chevron-up-icon>-->
+<!--  </div>-->
+</app-main-page-section>

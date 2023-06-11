@@ -1,0 +1,5 @@
+<div class="d-flex gap-2">
+  <app-solid-star-icon style="font-size: 1.25rem;" *ngFor="let i of asRange(fullStars)"></app-solid-star-icon>
+  <app-semi-star-icon style="font-size: 1.25rem;" *ngIf="isSemistarred"></app-semi-star-icon>
+  <app-hollow-star-icon style="font-size: 1.25rem;" *ngFor="let i of asRange(hollowStars)"></app-hollow-star-icon>
+</div>
