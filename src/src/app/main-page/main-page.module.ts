@@ -10,6 +10,7 @@ import {NavbarModule} from "../navbar/navbar.module";
 import { MainPageServicesItemComponent } from './main-page-services/main-page-services-item/main-page-services-item.component';
 import { MainPageReviewsComponent } from './main-page-reviews/main-page-reviews.component';
 import {CarouselModule} from "ngx-owl-carousel-o";
+import { MainPageAboutUsComponent } from './main-page-about-us/main-page-about-us.component';
 
 
 
@@ -21,7 +22,8 @@ import {CarouselModule} from "ngx-owl-carousel-o";
         MainPageSectionComponent,
         MainPageServicesComponent,
         MainPageServicesItemComponent,
-        MainPageReviewsComponent
+        MainPageReviewsComponent,
+        MainPageAboutUsComponent
     ],
     exports: [
         MainPageComponent
