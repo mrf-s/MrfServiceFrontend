@@ -35,6 +35,7 @@ import { ReviewComponent } from './components/review/review.component';
 import { ChevronUpIconComponent } from './components/icons/chevron-up-icon/chevron-up-icon.component';
 import { YandexIconComponent } from './components/icons/yandex-icon/yandex-icon.component';
 import { TwogisIconComponent } from './components/icons/twogis-icon/twogis-icon.component';
+import { ParallaxDirective } from './directives/parallax.directive';
 
 
 @NgModule({
@@ -70,7 +71,8 @@ import { TwogisIconComponent } from './components/icons/twogis-icon/twogis-icon.
     ReviewComponent,
     ChevronUpIconComponent,
     YandexIconComponent,
-    TwogisIconComponent
+    TwogisIconComponent,
+    ParallaxDirective
   ],
   imports: [
     CommonModule,
