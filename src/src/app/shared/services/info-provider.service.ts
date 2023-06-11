@@ -48,6 +48,6 @@ export class InfoProviderService {
   }
 
   public get workTime(): string {
-    return 'Ежедневно с 10:00 до 24:00';
+    return 'Ежедневно с 10:00 до 00:00';
   }
 }
