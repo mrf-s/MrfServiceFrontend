@@ -8,6 +8,27 @@
   padding-bottom: 150px;
 }
 
+@media (max-width: 992px) {
+  .billboard {
+    padding-top: 35px;
+    padding-bottom: 100px;
+  }
+}
+
+@media (max-width: 768px) {
+  .billboard {
+    padding-top: 25px;
+    padding-bottom: 75px;
+  }
+}
+
+@media (max-width: 576px) {
+  .billboard {
+    padding-top: 25px;
+    padding-bottom: 50px;
+  }
+}
+
 
 .billboard::before {
   content: "";
