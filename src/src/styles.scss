@@ -9,11 +9,6 @@
 @import "text";
 @import "fix";
 
-body {
-  display: block;
-  opacity: 100%;
-}
-
 button {
   @extend .btn;
   @extend .btn-primary;
