@@ -45,6 +45,10 @@ export class MainPageReviewsComponent {
   }
   reviews: ReviewModel[] = [];
 
+  ngOnInit(): void {
+    window.dispatchEvent(new Event('resize'));
+  }
+
   constructor(@Inject('ReviewsProvider') reviewsProvider: ReviewsProvider) {
     reviewsProvider.getReviews().subscribe(r => {
       this.reviews = r;
