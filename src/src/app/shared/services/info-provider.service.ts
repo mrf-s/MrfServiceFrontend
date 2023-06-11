@@ -32,11 +32,11 @@ export class InfoProviderService {
   }
 
   public get telegramUrl(): string {
-    return 'https://t.me/Not_Ilya4_4';
+    return 'https://t.me/MR_Farakhov';
   }
 
   public get telegram(): string {
-    return '@Not_Ilya4_4';
+    return '@MR_Farakhov';
   }
 
   public get whatsUpUrl(): string {
