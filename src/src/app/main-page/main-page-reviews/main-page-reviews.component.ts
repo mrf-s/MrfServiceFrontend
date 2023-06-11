@@ -27,6 +27,7 @@ export class MainPageReviewsComponent {
     pullDrag: false,
     dots: true,
     navSpeed: 500,
+    autoWidth: true,
     responsive: {
       0: {
         items: 1
