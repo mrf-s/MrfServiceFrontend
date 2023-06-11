@@ -27,7 +27,6 @@ export class MainPageReviewsComponent {
     pullDrag: false,
     dots: true,
     navSpeed: 500,
-    navText: ["<div id='right' class='nav-btn prev-slide fa-chevron-left app-primary-interactive'></div>","<div class='nav-btn next-slide fa-chevron-right app-primary-interactive'></div>"],
     responsive: {
       0: {
         items: 1

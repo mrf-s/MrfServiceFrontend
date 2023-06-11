@@ -19,6 +19,14 @@ export class InfoProviderService {
     return 'mr.farakhov@vk.com';
   }
 
+  public get yandexUrl(): string {
+    return 'https://yandex.ru/maps/43/kazan/?ll=49.084323%2C55.863514&mode=poi&poi%5Bpoint%5D=49.083282%2C55.863581&poi%5Buri%5D=ymapsbm1%3A%2F%2Forg%3Foid%3D15692944546&z=18.04';
+  }
+
+  public get twoGisUrl(): string {
+    return 'https://2gis.ru/kazan/firm/70000001069599068/49.083262%2C55.863733?m=49.083763%2C55.863639%2F17.92';
+  }
+
   public get vkUrl(): string {
     return 'https://vk.com/mr.farakhov';
   }
