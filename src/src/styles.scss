@@ -38,6 +38,11 @@ app-twogis-icon, app-yandex-icon {
   font-size: 2rem;
   color: $app-primary-color;
   fill: $app-primary-color;
+  display: flex;
+}
+
+fa-icon {
+  display: flex;
 }
 
 .app-no-select {

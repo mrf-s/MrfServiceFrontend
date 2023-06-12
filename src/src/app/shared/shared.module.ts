@@ -40,6 +40,7 @@ import { YandexBadgeComponent } from './components/yandex-badge/yandex-badge.com
 import { NavigateYandexMapDirective } from './directives/navigate-yandex-map.directive';
 import { Navigate2gisMapDirective } from './directives/navigate-2gis-map.directive';
 import { NavigateGoogleMapDirective } from './directives/navigate-google-map.directive';
+import { GoogleIconComponent } from './components/icons/google-icon/google-icon.component';
 
 
 @NgModule({
@@ -80,7 +81,8 @@ import { NavigateGoogleMapDirective } from './directives/navigate-google-map.dir
     YandexBadgeComponent,
     NavigateYandexMapDirective,
     Navigate2gisMapDirective,
-    NavigateGoogleMapDirective
+    NavigateGoogleMapDirective,
+    GoogleIconComponent
   ],
   imports: [
     CommonModule,
