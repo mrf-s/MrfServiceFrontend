@@ -37,6 +37,9 @@ import { YandexIconComponent } from './components/icons/yandex-icon/yandex-icon.
 import { TwogisIconComponent } from './components/icons/twogis-icon/twogis-icon.component';
 import { ParallaxDirective } from './directives/parallax.directive';
 import { YandexBadgeComponent } from './components/yandex-badge/yandex-badge.component';
+import { NavigateYandexMapDirective } from './directives/navigate-yandex-map.directive';
+import { Navigate2gisMapDirective } from './directives/navigate-2gis-map.directive';
+import { NavigateGoogleMapDirective } from './directives/navigate-google-map.directive';
 
 
 @NgModule({
@@ -74,7 +77,10 @@ import { YandexBadgeComponent } from './components/yandex-badge/yandex-badge.com
     YandexIconComponent,
     TwogisIconComponent,
     ParallaxDirective,
-    YandexBadgeComponent
+    YandexBadgeComponent,
+    NavigateYandexMapDirective,
+    Navigate2gisMapDirective,
+    NavigateGoogleMapDirective
   ],
   imports: [
     CommonModule,
