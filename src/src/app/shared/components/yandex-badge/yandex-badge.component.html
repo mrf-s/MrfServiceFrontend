@@ -1,1 +1,2 @@
-<iframe src="https://yandex.ru/sprav/widget/rating-badge/15692944546?type=rating&theme=dark" width="150" height="50"></iframe>
+<iframe *ngIf="theme === 'dark'" src="https://yandex.ru/sprav/widget/rating-badge/15692944546?type=rating&theme=dark" width="150" height="50"></iframe>
+<iframe *ngIf="theme === 'light'" src="https://yandex.ru/sprav/widget/rating-badge/15692944546?type=rating" width="150" height="50"></iframe>
