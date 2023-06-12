@@ -27,6 +27,10 @@ export class InfoProviderService {
     return 'https://2gis.ru/kazan/firm/70000001069599068/49.083262%2C55.863733?m=49.083763%2C55.863639%2F17.92';
   }
 
+  public get googleMapsUrl(): string {
+    return 'https://goo.gl/maps/688WuhAkutpjjTox7';
+  }
+
   public get vkUrl(): string {
     return 'https://vk.com/mr.farakhov';
   }
