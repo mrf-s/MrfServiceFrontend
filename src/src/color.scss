@@ -30,14 +30,17 @@ app-burger {
 
 .app-primary-interactive {
   color: $app-primary-color;
+  fill: $app-primary-color;
   cursor: pointer;
   &:hover {
     color: $app-primary-color-hover;
-    transition: color $app-transition;
+    fill: $app-primary-color-hover;
+    transition: color $app-transition, fill $app-transition;
   }
   &:active {
     color: $app-primary-color-click;
-    transition: color $app-transition;
+    fill: $app-primary-color-click;
+    transition: color $app-transition, fill $app-transition;
   }
 }
 

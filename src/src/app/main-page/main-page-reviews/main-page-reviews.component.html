@@ -1,4 +1,8 @@
-<ng-template #h>Отзывы <span class="app-primary-color">наших клиентов</span></ng-template>
+<ng-template #h>
+  <div class="d-flex align-items-center gap-3">
+    <span>Отзывы <span class="app-primary-color">наших клиентов</span></span>
+  </div>
+</ng-template>
 
 <app-main-page-section [sectionHeader]="h">
   <owl-carousel-o [options]="owlCarouselOptions">
