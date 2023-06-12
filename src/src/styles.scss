@@ -72,7 +72,9 @@ app-navbar {
   z-index: 3;
 }
 
-.owl-carousel .owl-stage{display: flex;}
+.owl-carousel .owl-stage {
+  display: flex;
+}
 
 li::marker {
   color: $app-primary-color;
