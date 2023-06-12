@@ -8,10 +8,11 @@ $app-primary-color: #E6282D;
 $app-primary-color-hover: darken($app-primary-color, $app-hover-darken);
 $app-primary-color-click: darken($app-primary-color, $app-click-darken);
 
-$app-primary-color-dark: #312222;
+$app-primary-color-dark: #242528;
 $app-primary-color-blind: #ffcbcd;
 
-$app-black-color: #1D1E1C;
+//$app-black-color: #1D1E1C;
+$app-black-color: #242528;
 $app-black-color-hover: lighten($app-black-color, $app-hover-lighten);
 $app-black-color-click: lighten($app-black-color, $app-click-lighten);
 

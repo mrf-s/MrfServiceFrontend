@@ -36,6 +36,7 @@ import { ChevronUpIconComponent } from './components/icons/chevron-up-icon/chevr
 import { YandexIconComponent } from './components/icons/yandex-icon/yandex-icon.component';
 import { TwogisIconComponent } from './components/icons/twogis-icon/twogis-icon.component';
 import { ParallaxDirective } from './directives/parallax.directive';
+import { YandexBadgeComponent } from './components/yandex-badge/yandex-badge.component';
 
 
 @NgModule({
@@ -72,7 +73,8 @@ import { ParallaxDirective } from './directives/parallax.directive';
     ChevronUpIconComponent,
     YandexIconComponent,
     TwogisIconComponent,
-    ParallaxDirective
+    ParallaxDirective,
+    YandexBadgeComponent
   ],
   imports: [
     CommonModule,
@@ -100,7 +102,8 @@ import { ParallaxDirective } from './directives/parallax.directive';
     ContactCirclesComponent,
     StarsComponent,
     ReviewComponent,
-    ChevronUpIconComponent
+    ChevronUpIconComponent,
+    YandexBadgeComponent
   ]
 })
 export class SharedModule { }

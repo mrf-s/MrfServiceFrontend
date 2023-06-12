@@ -44,7 +44,7 @@ export class InfoProviderService {
   }
 
   public get address(): string {
-    return 'Казань, Авиастроительный район, ул. Чапаева 16, подъезд 1, этаж 3, квартира 10'
+    return 'г. Казань, ул. Чапаева, Авиастроительный район, дом 16, подъезд 1, этаж 3, квартира 10'
   }
 
   public get workTime(): string {
