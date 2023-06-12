@@ -6,7 +6,7 @@ COPY src/package*.json ./
 RUN npm ci
 
 COPY src/ .
-RUN node ./node_modules/@angular/cli/bin/ng build
+RUN node ./node_modules/@angular/cli/bin/ng build -c production
 
 FROM nginx
 EXPOSE 80

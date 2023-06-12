@@ -30,7 +30,6 @@
               "src/assets"
             ],
             "styles": [
-              "src/inline-me-pls.scss",
               "node_modules/ngx-owl-carousel-o/lib/styles/prebuilt-themes/owl.carousel.min.css",
               "node_modules/ngx-owl-carousel-o/lib/styles/prebuilt-themes/owl.theme.default.min.css",
               "src/styles.scss"
@@ -59,7 +58,7 @@
                 },
                 "styles": {
                   "minify": true,
-                  "inlineCritical": true
+                  "inlineCritical": false
                 }
               }
             },
