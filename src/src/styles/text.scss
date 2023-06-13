@@ -24,7 +24,7 @@ h4, .h4 {
   @extend .fw-bold;
 }
 
-a {
+a, a:not([href]):not([class]) {
   @extend .app-primary-interactive;
   text-decoration: none;
 

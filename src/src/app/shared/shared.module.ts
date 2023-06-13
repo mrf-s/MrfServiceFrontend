@@ -42,6 +42,8 @@ import { Navigate2gisMapDirective } from './directives/navigate-2gis-map.directi
 import { NavigateGoogleMapDirective } from './directives/navigate-google-map.directive';
 import { GoogleIconComponent } from './components/icons/google-icon/google-icon.component';
 import { YandexMapComponent } from './components/yandex-map/yandex-map.component';
+import { InputComponent } from './components/input/input.component';
+import { ContactUsFormComponent } from './components/contact-us-form/contact-us-form.component';
 
 
 @NgModule({
@@ -84,7 +86,9 @@ import { YandexMapComponent } from './components/yandex-map/yandex-map.component
     Navigate2gisMapDirective,
     NavigateGoogleMapDirective,
     GoogleIconComponent,
-    YandexMapComponent
+    YandexMapComponent,
+    InputComponent,
+    ContactUsFormComponent
   ],
   imports: [
     CommonModule,
@@ -114,7 +118,8 @@ import { YandexMapComponent } from './components/yandex-map/yandex-map.component
         ReviewComponent,
         ChevronUpIconComponent,
         YandexBadgeComponent,
-        YandexMapComponent
+        YandexMapComponent,
+        InputComponent
     ]
 })
 export class SharedModule { }

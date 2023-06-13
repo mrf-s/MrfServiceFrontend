@@ -13,6 +13,7 @@ import {ReviewsProvider} from "./shared/services/reviews-provider";
 import {StubReviewsProviderService} from "./shared/services/stub-reviews-provider.service";
 import {RouterModule} from "@angular/router";
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 registerLocaleData(localeRu, 'ru');
 
@@ -29,7 +30,8 @@ registerLocaleData(localeRu, 'ru');
     NavbarModule,
     FooterModule,
     RouterModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    NgbModule
   ],
   providers: [
       { provide: LOCALE_ID, useValue: 'ru' },

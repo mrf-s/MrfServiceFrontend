@@ -11,6 +11,7 @@ import { MainPageServicesItemComponent } from './main-page-services/main-page-se
 import { MainPageReviewsComponent } from './main-page-reviews/main-page-reviews.component';
 import {CarouselModule} from "ngx-owl-carousel-o";
 import { MainPageAboutUsComponent } from './main-page-about-us/main-page-about-us.component';
+import {NgbModalModule} from "@ng-bootstrap/ng-bootstrap";
 
 
 
@@ -33,6 +34,7 @@ import { MainPageAboutUsComponent } from './main-page-about-us/main-page-about-u
         NgOptimizedImage,
         SharedModule,
         NavbarModule,
+      NgbModalModule,
       CarouselModule
     ]
 })

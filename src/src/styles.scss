@@ -12,10 +12,15 @@
 button {
   @extend .btn;
   @extend .btn-primary;
+  @extend .px-3;
+  @extend .py-2;
+  border-radius: 0.75rem;
+  white-space: nowrap;
+}
+
+.app-btn-big {
   @extend .px-4;
   @extend .py-3;
-  border-radius: 500px;
-  white-space: nowrap;
 }
 
 .container-fluid {
@@ -85,9 +90,4 @@ app-navbar {
 
 li::marker {
   color: $app-primary-color;
-}
-
-body {
-  display: block;
-  opacity: 100%;
 }
