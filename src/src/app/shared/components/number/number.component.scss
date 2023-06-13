@@ -1,0 +1,5 @@
+@import 'app-variables';
+
+:host.app-white-color a {
+  color: $app-white-color
+}

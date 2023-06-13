@@ -1,0 +1,57 @@
+@import 'color';
+
+.__app-interaction-base {
+  cursor: pointer;
+  transition: color $app-transition;
+}
+
+.app-primary-hover {
+  @extend .__app-interaction-base;
+  &:hover {
+    @extend .__app-interaction-base;
+    color: $app-primary-color-hover;
+  }
+  &:active {
+    @extend .__app-interaction-base;
+    color: $app-primary-color-click;
+  }
+}
+
+.app-primary-interactive {
+  @extend .app-primary-hover;
+  color: $app-primary-color;
+}
+
+.app-black-hover {
+  @extend .__app-interaction-base;
+  &:hover {
+    @extend .__app-interaction-base;
+    color: $app-black-color-hover;
+  }
+  &:active {
+    @extend .__app-interaction-base;
+    color: $app-black-color-click;
+  }
+}
+
+.app-black-interactive {
+  @extend .app-black-hover;
+  color: $app-black-color;
+}
+
+.app-white-hover {
+  @extend .__app-interaction-base;
+  &:hover {
+    @extend .__app-interaction-base;
+    color: $app-white-color-hover;
+  }
+  &:active {
+    @extend .__app-interaction-base;
+    color: $app-white-color-click;
+  }
+}
+
+.app-white-interactive {
+  @extend .app-white-hover;
+  color: $app-white-color;
+}

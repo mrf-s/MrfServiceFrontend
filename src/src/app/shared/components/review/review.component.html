@@ -4,25 +4,25 @@
     <p class="mb-3" style="overflow: hidden; display: -webkit-box; -webkit-line-clamp: 6; -webkit-box-orient: vertical;">{{review.message}}</p>
   </div>
   <div>
-    <a *ngIf="review.reviewPlatform === 'yandex'" appNavigateYandexMap class="maps-navigate d-inline-flex gap-3 align-items-center">
-      <app-yandex-icon class="app-primary-interactive"/>
+    <a *ngIf="review.reviewPlatform === 'yandex'" appNavigateYandexMap class="review-maps-navigate d-inline-flex gap-3 align-items-center">
+      <app-yandex-icon/>
       <div>
         <p class="app-caption">{{review.date | date}}</p>
-        <p class="fw-medium app-black-interactive">{{review.name}}</p>
+        <p class="fw-medium review-user-name">{{review.name}}</p>
       </div>
     </a>
-    <a *ngIf="review.reviewPlatform === '2gis'" appNavigate2gisMap class="maps-navigate d-inline-flex gap-3 align-items-center">
-      <app-twogis-icon class="app-primary-interactive"/>
+    <a *ngIf="review.reviewPlatform === '2gis'" appNavigate2gisMap class="review-maps-navigate d-inline-flex gap-3 align-items-center">
+      <app-twogis-icon/>
       <div>
         <p class="app-caption">{{review.date | date}}</p>
-        <p class="fw-medium app-black-interactive">{{review.name}}</p>
+        <p class="fw-medium review-user-name">{{review.name}}</p>
       </div>
     </a>
-    <a *ngIf="review.reviewPlatform === 'google'" appNavigateGoogleMap class="maps-navigate d-inline-flex gap-3 align-items-center">
-      <app-google-icon class="app-primary-interactive"/>
+    <a *ngIf="review.reviewPlatform === 'google'" appNavigateGoogleMap class="review-maps-navigate d-inline-flex gap-3 align-items-center">
+      <app-google-icon/>
       <div>
         <p class="app-caption">{{review.date | date}}</p>
-        <p class="fw-medium app-black-interactive">{{review.name}}</p>
+        <p class="fw-medium review-user-name">{{review.name}}</p>
       </div>
     </a>
   </div>

@@ -1,3 +1,9 @@
-.maps-navigate:hover {
+.review-maps-navigate {
   text-decoration: none;
+}
+
+.review-user-name {
+  &:hover, &:active {
+    text-decoration: underline;
+  }
 }

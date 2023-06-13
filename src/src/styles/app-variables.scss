@@ -1,0 +1,36 @@
+$app-white-hover-darken: 20%;
+$app-white-click-darken: 25%;
+
+$app-primary-hover-darken: 10%;
+$app-primary-click-darken: 15%;
+
+$app-black-hover-lighten: 15%;
+$app-black-click-lighten: 25%;
+
+$app-primary-color: #E6282D;
+$app-primary-color-hover: darken($app-primary-color, $app-primary-hover-darken);
+$app-primary-color-click: darken($app-primary-color, $app-primary-click-darken);
+
+$app-primary-color-dark: #242528;
+$app-primary-color-blind: #ffcbcd;
+
+//$app-black-color: #1D1E1C;
+$app-black-color: #242528;
+$app-black-color-hover: lighten($app-black-color, $app-black-hover-lighten);
+$app-black-color-click: lighten($app-black-color, $app-black-click-lighten);
+
+$app-white-color: #ffffff;
+$app-white-color-hover: darken($app-white-color, $app-white-hover-darken);
+$app-white-color-click: darken($app-white-color, $app-white-click-darken);
+
+$app-muted-color: #a9a9a9;
+
+$app-bg-color: #ffffff;
+
+$app-site-content-max-width: 1200px;
+
+$app-navbar-size: 64px;
+
+$app-transition: 0.15s ease-in-out;
+
+$app-border-radius: 16px;

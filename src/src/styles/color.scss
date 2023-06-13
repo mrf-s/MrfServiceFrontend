@@ -1,0 +1,29 @@
+@import "app-variables";
+
+.app-primary-color {
+  color: $app-primary-color;
+}
+
+.app-bg-primary-dark-color {
+  background-color: $app-primary-color-dark;
+}
+
+.app-bg-black-color {
+  background-color: $app-black-color;
+}
+
+.app-white-color {
+  color: $app-white-color;
+}
+
+.app-muted-color {
+  color: $app-muted-color;
+}
+
+.app-black-color {
+  color: $app-black-color;
+}
+
+app-burger {
+  color: $app-black-color;
+}
