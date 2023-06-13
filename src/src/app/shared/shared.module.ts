@@ -41,6 +41,7 @@ import { NavigateYandexMapDirective } from './directives/navigate-yandex-map.dir
 import { Navigate2gisMapDirective } from './directives/navigate-2gis-map.directive';
 import { NavigateGoogleMapDirective } from './directives/navigate-google-map.directive';
 import { GoogleIconComponent } from './components/icons/google-icon/google-icon.component';
+import { YandexMapComponent } from './components/yandex-map/yandex-map.component';
 
 
 @NgModule({
@@ -82,7 +83,8 @@ import { GoogleIconComponent } from './components/icons/google-icon/google-icon.
     NavigateYandexMapDirective,
     Navigate2gisMapDirective,
     NavigateGoogleMapDirective,
-    GoogleIconComponent
+    GoogleIconComponent,
+    YandexMapComponent
   ],
   imports: [
     CommonModule,
@@ -90,28 +92,29 @@ import { GoogleIconComponent } from './components/icons/google-icon/google-icon.
     RouterLink,
     BrowserAnimationsModule
   ],
-  exports: [
-    ButtonComponent,
-    BillboardComponent,
-    ClockIconComponent,
-    ShieldIconComponent,
-    WalletIconComponent,
-    PhoneComponent,
-    BurgerComponent,
-    PrinterIconComponent,
-    AirpodsIconComponent,
-    SmartphoneIconComponent,
-    ComputerIconComponent,
-    WindowsIconComponent,
-    PremiumIconComponent,
-    LogoComponent,
-    NumberNavigateDirective,
-    NumberComponent,
-    ContactCirclesComponent,
-    StarsComponent,
-    ReviewComponent,
-    ChevronUpIconComponent,
-    YandexBadgeComponent
-  ]
+    exports: [
+        ButtonComponent,
+        BillboardComponent,
+        ClockIconComponent,
+        ShieldIconComponent,
+        WalletIconComponent,
+        PhoneComponent,
+        BurgerComponent,
+        PrinterIconComponent,
+        AirpodsIconComponent,
+        SmartphoneIconComponent,
+        ComputerIconComponent,
+        WindowsIconComponent,
+        PremiumIconComponent,
+        LogoComponent,
+        NumberNavigateDirective,
+        NumberComponent,
+        ContactCirclesComponent,
+        StarsComponent,
+        ReviewComponent,
+        ChevronUpIconComponent,
+        YandexBadgeComponent,
+        YandexMapComponent
+    ]
 })
 export class SharedModule { }

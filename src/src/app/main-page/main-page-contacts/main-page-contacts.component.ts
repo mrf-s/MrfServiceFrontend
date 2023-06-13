@@ -15,6 +15,6 @@ export class MainPageContactsComponent implements OnInit{
   }
 
   ngOnInit(): void {
-    this.map.addMapToHtml('map');
+    // this.map.addMapToHtml('map');
   }
 }
