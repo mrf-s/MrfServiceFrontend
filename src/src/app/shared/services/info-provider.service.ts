@@ -19,6 +19,14 @@ export class InfoProviderService {
     return this._formattedPhoneNumber;
   }
 
+  public get siteUrl(): string {
+    return 'mrf-s.ru';
+  }
+
+  public get siteUrlWww(): string {
+    return `www.${this.siteUrl}`;
+  }
+
   public get email(): string {
     return 'mr.farakhov@vk.com';
   }

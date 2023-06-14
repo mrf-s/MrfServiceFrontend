@@ -132,7 +132,9 @@ import { VolumeIconComponent } from './components/icons/volume-icon/volume-icon.
     InputComponent,
     NumberInputComponent,
     TimerIconComponent,
-    VolumeIconComponent
+    VolumeIconComponent,
+    NavigateTelegramDirective,
+    NavigateVkDirective
   ]
 })
 export class SharedModule { }
