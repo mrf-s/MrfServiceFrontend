@@ -42,8 +42,11 @@ import { Navigate2gisMapDirective } from './directives/navigate-2gis-map.directi
 import { NavigateGoogleMapDirective } from './directives/navigate-google-map.directive';
 import { GoogleIconComponent } from './components/icons/google-icon/google-icon.component';
 import { YandexMapComponent } from './components/yandex-map/yandex-map.component';
-import { InputComponent } from './components/input/input.component';
+import { InputComponent } from './components/form-inputs/input/input.component';
 import { ContactUsFormComponent } from './components/contact-us-form/contact-us-form.component';
+import {FormsModule} from "@angular/forms";
+import {NgxMaskDirective} from "ngx-mask";
+import { NumberInputComponent } from './components/form-inputs/number-input/number-input.component';
 
 
 @NgModule({
@@ -88,38 +91,42 @@ import { ContactUsFormComponent } from './components/contact-us-form/contact-us-
     GoogleIconComponent,
     YandexMapComponent,
     InputComponent,
-    ContactUsFormComponent
+    ContactUsFormComponent,
+    NumberInputComponent
   ],
   imports: [
     CommonModule,
     FontAwesomeModule,
     RouterLink,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    FormsModule,
+    NgxMaskDirective
   ],
-    exports: [
-        ButtonComponent,
-        BillboardComponent,
-        ClockIconComponent,
-        ShieldIconComponent,
-        WalletIconComponent,
-        PhoneComponent,
-        BurgerComponent,
-        PrinterIconComponent,
-        AirpodsIconComponent,
-        SmartphoneIconComponent,
-        ComputerIconComponent,
-        WindowsIconComponent,
-        PremiumIconComponent,
-        LogoComponent,
-        NumberNavigateDirective,
-        NumberComponent,
-        ContactCirclesComponent,
-        StarsComponent,
-        ReviewComponent,
-        ChevronUpIconComponent,
-        YandexBadgeComponent,
-        YandexMapComponent,
-        InputComponent
-    ]
+  exports: [
+    ButtonComponent,
+    BillboardComponent,
+    ClockIconComponent,
+    ShieldIconComponent,
+    WalletIconComponent,
+    PhoneComponent,
+    BurgerComponent,
+    PrinterIconComponent,
+    AirpodsIconComponent,
+    SmartphoneIconComponent,
+    ComputerIconComponent,
+    WindowsIconComponent,
+    PremiumIconComponent,
+    LogoComponent,
+    NumberNavigateDirective,
+    NumberComponent,
+    ContactCirclesComponent,
+    StarsComponent,
+    ReviewComponent,
+    ChevronUpIconComponent,
+    YandexBadgeComponent,
+    YandexMapComponent,
+    InputComponent,
+    NumberInputComponent
+  ]
 })
 export class SharedModule { }

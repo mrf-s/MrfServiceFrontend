@@ -14,6 +14,8 @@ import {StubReviewsProviderService} from "./shared/services/stub-reviews-provide
 import {RouterModule} from "@angular/router";
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import {NgxMaskDirective, NgxMaskPipe, provideNgxMask} from "ngx-mask";
+import {FormsModule} from "@angular/forms";
 
 registerLocaleData(localeRu, 'ru');
 
@@ -31,11 +33,15 @@ registerLocaleData(localeRu, 'ru');
     FooterModule,
     RouterModule,
     BrowserAnimationsModule,
-    NgbModule
+    FormsModule,
+    NgbModule,
+    NgxMaskDirective,
+    NgxMaskPipe
   ],
   providers: [
       { provide: LOCALE_ID, useValue: 'ru' },
-    {provide: 'ReviewsProvider', useClass: StubReviewsProviderService}
+    {provide: 'ReviewsProvider', useClass: StubReviewsProviderService},
+    provideNgxMask()
   ],
   bootstrap: [AppComponent]
 })

@@ -39,3 +39,4 @@ import {NgbModalModule} from "@ng-bootstrap/ng-bootstrap";
     ]
 })
 export class MainPageModule { }
+
