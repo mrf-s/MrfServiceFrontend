@@ -1,3 +1,5 @@
+@import 'app-variables';
+
 p {
   margin: 0;
 }
@@ -24,6 +26,17 @@ hr {
   padding: 0;
 }
 
-.form-check-input:focus {
-  box-shadow: none;
+$app-input-transition: 0.4s ease,-webkit-transform 0.4s ease;
+
+.form-check-input, .form-control {
+  transition: border-color $app-input-transition, opacity $app-input-transition;
+
+  &:focus {
+    box-shadow: none;
+  }
+}
+
+.form-floating > label {
+  color: $app-caption-color;
+  transition: transform $app-input-transition;
 }

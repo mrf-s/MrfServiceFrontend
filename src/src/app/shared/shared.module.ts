@@ -49,6 +49,7 @@ import {NgxMaskDirective} from "ngx-mask";
 import { NumberInputComponent } from './components/form-inputs/number-input/number-input.component';
 import { TimerIconComponent } from './components/icons/timer-icon/timer-icon.component';
 import { VolumeIconComponent } from './components/icons/volume-icon/volume-icon.component';
+import { AppTextAreaComponent } from './components/form-inputs/app-text-area/app-text-area.component';
 
 
 @NgModule({
@@ -96,7 +97,8 @@ import { VolumeIconComponent } from './components/icons/volume-icon/volume-icon.
     ContactUsFormComponent,
     NumberInputComponent,
     TimerIconComponent,
-    VolumeIconComponent
+    VolumeIconComponent,
+    AppTextAreaComponent
   ],
   imports: [
     CommonModule,
@@ -134,7 +136,8 @@ import { VolumeIconComponent } from './components/icons/volume-icon/volume-icon.
     TimerIconComponent,
     VolumeIconComponent,
     NavigateTelegramDirective,
-    NavigateVkDirective
+    NavigateVkDirective,
+    AppTextAreaComponent
   ]
 })
 export class SharedModule { }

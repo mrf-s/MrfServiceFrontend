@@ -2,16 +2,13 @@ import {Component, Input} from '@angular/core';
 import {GuidService} from "../../../services/guid.service";
 
 @Component({
-  selector: 'app-input',
-  templateUrl: './input.component.html',
-  styleUrls: ['./input.component.scss']
+  selector: 'app-text-area',
+  templateUrl: './app-text-area.component.html',
+  styleUrls: ['./app-text-area.component.scss']
 })
-export class InputComponent {
+export class AppTextAreaComponent {
   @Input() label: string = 'Label';
-  @Input() type: string = 'text';
   @Input() model: string = '';
-  @Input() ngxMaskMask: string = '';
-  @Input() ngxMaskPrefix: string = '';
   protected guid: string;
 
   constructor(guidGenerator: GuidService) {
