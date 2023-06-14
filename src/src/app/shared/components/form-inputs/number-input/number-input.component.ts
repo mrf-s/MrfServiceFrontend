@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component, Input} from '@angular/core';
 
 @Component({
   selector: 'app-number-input',
@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./number-input.component.scss']
 })
 export class NumberInputComponent {
-
+  @Input() label: string = 'Телефон';
 }

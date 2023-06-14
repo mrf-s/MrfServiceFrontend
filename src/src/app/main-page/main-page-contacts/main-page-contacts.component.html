@@ -36,11 +36,12 @@
           <div class="p-sm-5 p-4 app-black-color d-flex flex-column gap-3">
             <h3>Заказать звонок</h3>
             <p>Оставьте свои контактные данные и наш директор свяжется с Вами в течение 15 минут.</p>
-            <app-input label="Как Вас зовут"/>
-            <app-number-input/>
+            <app-input label="Как Вас зовут*"/>
+            <app-number-input label="Телефон*"/>
             <app-input label="Модель устройства"/>
             <app-text-area label="Неисправность"/>
             <button (click)="modal.close()">Отправить</button>
+            <p class="app-caption">Нажимая «Заказать звонок», Вы соглашаетесь на обработку указанных данных ИП «Фарахов Марсель Радикович» на условиях Политики конфиденциальности</p>
           </div>
         </ng-template>
         <button (click)="openModal(fuckingModal)">Заказать звонок</button>
