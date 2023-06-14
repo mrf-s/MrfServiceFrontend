@@ -48,6 +48,7 @@ import {FormsModule} from "@angular/forms";
 import {NgxMaskDirective} from "ngx-mask";
 import { NumberInputComponent } from './components/form-inputs/number-input/number-input.component';
 import { TimerIconComponent } from './components/icons/timer-icon/timer-icon.component';
+import { VolumeIconComponent } from './components/icons/volume-icon/volume-icon.component';
 
 
 @NgModule({
@@ -94,7 +95,8 @@ import { TimerIconComponent } from './components/icons/timer-icon/timer-icon.com
     InputComponent,
     ContactUsFormComponent,
     NumberInputComponent,
-    TimerIconComponent
+    TimerIconComponent,
+    VolumeIconComponent
   ],
   imports: [
     CommonModule,
@@ -129,7 +131,8 @@ import { TimerIconComponent } from './components/icons/timer-icon/timer-icon.com
     YandexMapComponent,
     InputComponent,
     NumberInputComponent,
-    TimerIconComponent
+    TimerIconComponent,
+    VolumeIconComponent
   ]
 })
 export class SharedModule { }
