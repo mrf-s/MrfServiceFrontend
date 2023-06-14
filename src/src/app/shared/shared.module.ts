@@ -7,7 +7,7 @@ import {FontAwesomeModule} from "@fortawesome/angular-fontawesome";
 import { ShieldIconComponent } from './components/icons/shield-icon/shield-icon.component';
 import { WalletIconComponent } from './components/icons/wallet-icon/wallet-icon.component';
 import { MarketIconComponent } from './components/icons/market-icon/market-icon.component';
-import { PhoneComponent } from './components/icons/phone/phone.component';
+import { PhoneIconComponent } from './components/icons/phone-icon/phone-icon.component';
 import { BurgerComponent } from './components/icons/burger/burger.component';
 import {RouterLink} from "@angular/router";
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
@@ -47,6 +47,7 @@ import { ContactUsFormComponent } from './components/contact-us-form/contact-us-
 import {FormsModule} from "@angular/forms";
 import {NgxMaskDirective} from "ngx-mask";
 import { NumberInputComponent } from './components/form-inputs/number-input/number-input.component';
+import { TimerIconComponent } from './components/icons/timer-icon/timer-icon.component';
 
 
 @NgModule({
@@ -57,7 +58,7 @@ import { NumberInputComponent } from './components/form-inputs/number-input/numb
     ShieldIconComponent,
     WalletIconComponent,
     MarketIconComponent,
-    PhoneComponent,
+    PhoneIconComponent,
     BurgerComponent,
     PrinterIconComponent,
     AirpodsIconComponent,
@@ -92,7 +93,8 @@ import { NumberInputComponent } from './components/form-inputs/number-input/numb
     YandexMapComponent,
     InputComponent,
     ContactUsFormComponent,
-    NumberInputComponent
+    NumberInputComponent,
+    TimerIconComponent
   ],
   imports: [
     CommonModule,
@@ -108,7 +110,7 @@ import { NumberInputComponent } from './components/form-inputs/number-input/numb
     ClockIconComponent,
     ShieldIconComponent,
     WalletIconComponent,
-    PhoneComponent,
+    PhoneIconComponent,
     BurgerComponent,
     PrinterIconComponent,
     AirpodsIconComponent,
@@ -126,7 +128,8 @@ import { NumberInputComponent } from './components/form-inputs/number-input/numb
     YandexBadgeComponent,
     YandexMapComponent,
     InputComponent,
-    NumberInputComponent
+    NumberInputComponent,
+    TimerIconComponent
   ]
 })
 export class SharedModule { }
