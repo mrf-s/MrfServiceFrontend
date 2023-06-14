@@ -47,3 +47,7 @@ a, a:not([href]):not([class]) {
   color: $app-caption-color;
   font-size: 0.8125rem;
 }
+
+small {
+  @extend .app-caption;
+}

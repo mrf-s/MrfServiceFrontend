@@ -46,10 +46,10 @@ import { InputComponent } from './components/form-inputs/input/input.component';
 import { ContactUsFormComponent } from './components/contact-us-form/contact-us-form.component';
 import {FormsModule} from "@angular/forms";
 import {NgxMaskDirective} from "ngx-mask";
-import { NumberInputComponent } from './components/form-inputs/number-input/number-input.component';
 import { TimerIconComponent } from './components/icons/timer-icon/timer-icon.component';
 import { VolumeIconComponent } from './components/icons/volume-icon/volume-icon.component';
-import { AppTextAreaComponent } from './components/form-inputs/app-text-area/app-text-area.component';
+import { OrderCallModalContentComponent } from './components/order-call-modal-content/order-call-modal-content.component';
+import { OrderCallModalDirective } from './directives/order-call-modal.directive';
 
 
 @NgModule({
@@ -95,10 +95,10 @@ import { AppTextAreaComponent } from './components/form-inputs/app-text-area/app
     YandexMapComponent,
     InputComponent,
     ContactUsFormComponent,
-    NumberInputComponent,
     TimerIconComponent,
     VolumeIconComponent,
-    AppTextAreaComponent
+    OrderCallModalContentComponent,
+    OrderCallModalDirective
   ],
   imports: [
     CommonModule,
@@ -132,12 +132,11 @@ import { AppTextAreaComponent } from './components/form-inputs/app-text-area/app
     YandexBadgeComponent,
     YandexMapComponent,
     InputComponent,
-    NumberInputComponent,
     TimerIconComponent,
     VolumeIconComponent,
     NavigateTelegramDirective,
     NavigateVkDirective,
-    AppTextAreaComponent
+    OrderCallModalDirective
   ]
 })
 export class SharedModule { }
