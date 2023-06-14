@@ -1,13 +1,13 @@
 <footer class="app-bg-black-color app-white-color">
   <div class="container-fluid py-4">
     <div class="row row-gap-4">
-      <div class="col-12 col-md-5">
+      <div class="col-12 col-md-5 app-caption">
         <div class="d-flex gap-3 mb-2 flex-wrap">
           <app-logo class="d-block" colorMode="white"/>
           <app-yandex-badge theme="dark" class="d-block"/>
         </div>
-        <p class="app-caption mb-2" style="font-size: 0.675rem">Сайт носит сугубо информационный характер и не является публичной офертой, определяемой Статьей 437 (2) ГК РФ. Для улучшения качества обслуживания ваш разговор может быть записан. Представленные на сайте товарные знаки используются с правомерной информационной и описательной целью.</p>
-        <div class="app-caption">
+        <p class="mb-2" style="font-size: 0.675rem">Сайт носит сугубо информационный характер и не является публичной офертой, определяемой Статьей 437 (2) ГК РФ. Представленные на сайте товарные знаки используются с правомерной информационной и описательной целью. Для улучшения качества обслуживания Ваш разговор может быть записан. Время ремонта может меняться в зависимости от модели устройства и сложности проводимых работ.</p>
+        <div>
           <p>ИП Фарахов Марсель Радикович</p>
           <p>ОГРН 323169000057001</p>
           <p>ИНН 165914470859</p>
@@ -29,8 +29,10 @@
           <app-number class="d-block fw-medium"></app-number>
           <app-contact-circles class="d-flex gap-2"></app-contact-circles>
         </div>
-        <p>{{info.address}}</p>
-        <p>{{info.workTime}}</p>
+        <div class="app-caption">
+          <p>{{info.address}}</p>
+          <p>{{info.workTime}}</p>
+        </div>
       </div>
     </div>
     <hr class="my-2">
