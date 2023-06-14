@@ -1,14 +1,27 @@
-<div class="container-fluid app-navbar">
+<div class="container-fluid app-navbar" #navbar>
   <div class="d-flex flex-column">
     <div class="d-flex align-items-center justify-content-between navbar-height w-100">
       <app-logo class="d-none d-sm-block"></app-logo>
       <app-logo class="d-block d-sm-none" [shorten]="true"></app-logo>
-      <app-navbar-navigations class="gap-4 d-none d-lg-flex"></app-navbar-navigations>
+      <div class="gap-4 d-none d-lg-flex">
+        <a (click)="closeBurger()" class="app-black-color" routerLink="/">Главная</a>
+        <a (click)="closeBurger()" class="app-black-color">Услуги</a>
+        <a (click)="closeBurger()" class="app-black-color">Отзывы</a>
+      </div>
       <div class="d-flex align-items-center gap-2">
-        <app-navbar-number></app-navbar-number>
+        <a appNumberNavigate class="d-flex align-items-center gap-2">
+          <app-phone-icon class="app-primary-interactive" style="font-size: 1.5rem;"/>
+          <app-number class="fw-medium d-none d-md-block h5"/>
+        </a>
         <app-burger class="d-block ms-3 d-lg-none app-black-interactive" (click)="toggleBurger()"></app-burger>
       </div>
     </div>
-    <app-navbar-responsive-navigation class="d-block" [show]="isBurgerTouched"></app-navbar-responsive-navigation>
+    <div *ngIf="isBurgerTouched" @dropDown>
+      <div class="d-flex d-lg-none gap-4 gap-sm-5 flex-column flex-sm-row justify-content-center align-items-center py-4">
+        <a (click)="closeBurger()" class="app-black-color" routerLink="/">Главная</a>
+        <a (click)="closeBurger()" class="app-black-color">Услуги</a>
+        <a (click)="closeBurger()" class="app-black-color">Отзывы</a>
+      </div>
+    </div>
   </div>
 </div>

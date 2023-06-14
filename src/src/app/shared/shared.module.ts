@@ -43,7 +43,6 @@ import { NavigateGoogleMapDirective } from './directives/navigate-google-map.dir
 import { GoogleIconComponent } from './components/icons/google-icon/google-icon.component';
 import { YandexMapComponent } from './components/yandex-map/yandex-map.component';
 import { InputComponent } from './components/form-inputs/input/input.component';
-import { ContactUsFormComponent } from './components/contact-us-form/contact-us-form.component';
 import {FormsModule} from "@angular/forms";
 import {NgxMaskDirective} from "ngx-mask";
 import { TimerIconComponent } from './components/icons/timer-icon/timer-icon.component';
@@ -94,7 +93,6 @@ import { OrderCallModalDirective } from './directives/order-call-modal.directive
     GoogleIconComponent,
     YandexMapComponent,
     InputComponent,
-    ContactUsFormComponent,
     TimerIconComponent,
     VolumeIconComponent,
     OrderCallModalContentComponent,
