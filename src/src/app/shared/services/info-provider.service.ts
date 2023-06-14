@@ -11,6 +11,10 @@ export class InfoProviderService {
     return this._phoneNumber;
   }
 
+  public get hrefPhone(): string {
+    return `tel:${this._phoneNumber}`;
+  }
+
   public get formattedPhoneNumber(): string {
     return this._formattedPhoneNumber;
   }
@@ -35,6 +39,10 @@ export class InfoProviderService {
     return 'https://vk.com/mr.farakhov';
   }
 
+  public get vkNickName(): string {
+    return 'MR.Farakhov';
+  }
+
   public get telegramUrl(): string {
     return 'https://t.me/MRFServiceStore';
   }
@@ -48,10 +56,10 @@ export class InfoProviderService {
   }
 
   public get address(): string {
-    return 'г. Казань, ул. Чапаева, Авиастроительный район, дом 16, подъезд 1, этаж 3, квартира 10'
+    return 'г. Казань, ул. Чапаева, Авиастроительный район, дом 16, подъезд 1, домофон 10В, этаж 3, квартира 10 (Перед Вашим приходом, просьба позвонить)'
   }
 
   public get workTime(): string {
-    return 'Ежедневно с 10:00 до 00:00';
+    return 'Ежедневно с 10:00 до 00:00, без выходных';
   }
 }

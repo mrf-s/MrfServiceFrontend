@@ -6,13 +6,18 @@
       <div class="app-card app-black-color d-inline-block">
         <h3 class="mb-4">Контакты</h3>
         <div class="mb-3">
-          <p class="app-caption mb-2">Контактный телефон</p>
-          <app-number class="fw-medium mb-2"/>
+          <p class="app-caption mb-2">Контактный телефон (WhatsApp)</p>
+          <app-number class="mb-2"/>
           <hr>
         </div>
         <div class="mb-3">
-          <p class="app-caption mb-2">Email</p>
-          <p class="fw-medium mb-2">{{info.email}}</p>
+          <p class="app-caption mb-2">Telegram</p>
+          <a [href]="info.telegramUrl">{{info.telegram}}</a>
+          <hr>
+        </div>
+        <div class="mb-3">
+          <p class="app-caption mb-2">ВКонтакте</p>
+          <a [href]="info.vkUrl">{{info.vkNickName}}</a>
           <hr>
         </div>
         <div class="mb-3">
