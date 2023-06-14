@@ -8,6 +8,7 @@
 @import "bootstrap-variables";
 @import "text";
 @import "fix";
+@import "icons";
 
 button {
   @extend .btn;
@@ -34,22 +35,6 @@ body {
   word-wrap: break-word;
 
   word-break: break-word;
-}
-
-$all-icon-tags: '*:has(> fa-icon, > .fa-icon)';
-
-#{$all-icon-tags} {
-  font-size: 2rem;
-  color: $app-primary-color;
-  display: flex;
-}
-
-a #{$all-icon-tags} {
-  @extend .app-primary-interactive;
-}
-
-fa-icon {
-  display: flex;
 }
 
 .app-no-select {

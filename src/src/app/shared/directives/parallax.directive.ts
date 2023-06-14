@@ -1,18 +1,17 @@
 import {Directive, ElementRef, HostListener, Input} from '@angular/core';
 
 @Directive({
-  selector: '[appParallax]'
+  selector: '[appParallax][initialPosition]'
 })
 export class ParallaxDirective {
-  @Input('ratio') parallaxRatio: number = 0.5
-  initialTop: number = 0
+  @Input() ratio: number = 0.5;
+  @Input() initialPosition!: number;
 
   constructor(private el: ElementRef) {
 
   }
 
   ngOnInit(): void {
-    this.initialTop = this.el.nativeElement.getBoundingClientRect().height / -2;
     this.update();
   }
 
@@ -22,6 +21,10 @@ export class ParallaxDirective {
   }
 
   private update(): void {
-    this.el.nativeElement.style.backgroundPositionY = (this.initialTop + (window.scrollY * this.parallaxRatio)) + 'px';
+    this.el.nativeElement.style.backgroundPositionY = (this.initialPosition + (window.scrollY * this.ratio)) + 'px';
+  }
+
+  private get halfHeight(): number {
+    return this.el.nativeElement.getBoundingClientRect().height / 2;
   }
 }

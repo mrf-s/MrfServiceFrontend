@@ -1,0 +1,17 @@
+@import 'app-variables';
+
+$all-icon-tags: '*:has(> fa-icon, > .fa-icon)';
+
+#{$all-icon-tags} {
+  font-size: 2rem;
+  color: $app-primary-color;
+  display: flex;
+}
+
+a #{$all-icon-tags} {
+  @extend .app-primary-interactive;
+}
+
+fa-icon {
+  display: flex;
+}
