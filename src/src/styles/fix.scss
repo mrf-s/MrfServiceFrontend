@@ -40,3 +40,11 @@ $app-input-transition: 0.4s ease,-webkit-transform 0.4s ease;
   color: $app-caption-color;
   transition: transform $app-input-transition;
 }
+
+.form-control.is-invalid:focus {
+  box-shadow: none;
+}
+
+button:focus-visible {
+  box-shadow: none;
+}

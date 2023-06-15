@@ -1,30 +1,36 @@
-import {Component, Input} from '@angular/core';
+import {Component, EventEmitter, Input, Output, Self, TemplateRef} from '@angular/core';
 import {GuidService} from "../../../services/guid.service";
+import {ControlValueAccessor, FormControl, NgControl} from "@angular/forms";
 
 @Component({
-  selector: 'app-input',
+  selector: 'app-input[formControl]',
   templateUrl: './input.component.html',
   styleUrls: ['./input.component.scss']
 })
 export class InputComponent {
+  @Input() formControl!: FormControl;
   @Input() label: string = 'Label';
   @Input() type: 'text' | 'tel' | 'textarea' = 'text';
-  @Input() model: string = '';
+  @Input() displayErrorPolicy: 'After Touched' | 'Manual' = 'After Touched';
   @Input() ngxMaskMask: string = '';
   @Input() ngxMaskPrefix: string = '';
-  private telMask: string = '(000) 000-00-00';
-  private telPrefix: string = '+7 ';
+  @Input() errors: string[] = [];
   protected guid: string;
 
-  ngOnInit(): void {
-    if (this.type === 'tel') {
-      if (this.ngxMaskMask === '') {
-        this.ngxMaskMask = this.telMask;
-      }
-      if (this.ngxMaskPrefix === '') {
-        this.ngxMaskPrefix = this.telPrefix;
-      }
+  protected get showErrors() {
+    return this.formControl.invalid && this.formControl.touched;
+  }
+
+  get error(): string | null {
+    if (this.formControl.errors !== null && this.formControl.errors!['required'] === true) {
+      return 'Это поле обязательно';
     }
+
+    if (this.errors.length >= 1) {
+      return this.errors[0];
+    }
+
+    return null;
   }
 
   constructor(guidGenerator: GuidService) {

@@ -1,5 +1,25 @@
 <div class="form-floating">
-  <input *ngIf="type !== 'textarea'" class="form-control" [type]="type" placeholder="a" [id]="guid" [ngModel]="model" [mask]="ngxMaskMask" [prefix]="ngxMaskPrefix">
-  <textarea *ngIf="type === 'textarea'" class="form-control" placeholder="a" [id]="guid" [ngModel]="model"></textarea>
+  <input
+    [formControl]="formControl"
+    *ngIf="type !== 'textarea'"
+    class="form-control"
+    [class.is-invalid]="showErrors"
+    [type]="type"
+    placeholder="a"
+    [id]="guid"
+    [mask]="ngxMaskMask"
+    [prefix]="ngxMaskPrefix">
+  <textarea
+    [formControl]="formControl"
+    autosize
+    style="resize: none"
+    *ngIf="type === 'textarea'"
+    class="form-control"
+    [class.is-invalid]="showErrors"
+     placeholder="a"
+    [id]="guid"></textarea>
+  <div class="invalid-feedback" *ngIf="error !== null">
+    <p>{{error}}</p>
+  </div>
   <label [for]="guid">{{label}}</label>
 </div>

@@ -43,13 +43,15 @@ import { NavigateGoogleMapDirective } from './directives/navigate-google-map.dir
 import { GoogleIconComponent } from './components/icons/google-icon/google-icon.component';
 import { YandexMapComponent } from './components/yandex-map/yandex-map.component';
 import { InputComponent } from './components/form-inputs/input/input.component';
-import {FormsModule} from "@angular/forms";
+import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import {NgxMaskDirective} from "ngx-mask";
 import { TimerIconComponent } from './components/icons/timer-icon/timer-icon.component';
 import { VolumeIconComponent } from './components/icons/volume-icon/volume-icon.component';
 import { OrderCallModalContentComponent } from './components/order-call-modal-content/order-call-modal-content.component';
 import { OrderCallModalDirective } from './directives/order-call-modal.directive';
 import { XmarkIconComponent } from './components/icons/xmark-icon/xmark-icon.component';
+import {AutosizeModule} from "ngx-autosize";
+import { NumberInputComponent } from './components/form-inputs/number-input/number-input.component';
 
 
 @NgModule({
@@ -98,7 +100,8 @@ import { XmarkIconComponent } from './components/icons/xmark-icon/xmark-icon.com
     VolumeIconComponent,
     OrderCallModalContentComponent,
     OrderCallModalDirective,
-    XmarkIconComponent
+    XmarkIconComponent,
+    NumberInputComponent
   ],
   imports: [
     CommonModule,
@@ -106,7 +109,9 @@ import { XmarkIconComponent } from './components/icons/xmark-icon/xmark-icon.com
     RouterLink,
     BrowserAnimationsModule,
     FormsModule,
-    NgxMaskDirective
+    NgxMaskDirective,
+    ReactiveFormsModule,
+    AutosizeModule
   ],
   exports: [
     ButtonComponent,

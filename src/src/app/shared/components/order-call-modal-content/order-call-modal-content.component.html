@@ -4,10 +4,14 @@
     <app-xmark-icon class="app-primary-interactive" style="font-size: 1.5rem" (click)="closed.emit()"/>
   </div>
   <p>Оставьте свои контактные данные и наш директор свяжется с Вами в течение 15 минут.</p>
-  <app-input label="Как Вас зовут*"/>
-  <app-input label="Телефон*" type="tel"/>
-  <app-input label="Модель устройства"/>
-  <app-input label="Неисправность" type="textarea"/>
-  <button (click)="closed.emit()">Отправить</button>
+  <form [formGroup]="form" class="d-flex gap-3 justify-content-between flex-column">
+
+    <app-input ngDefaultControl label="Как Вас зовут*" [formControl]="name"/>
+    <app-number-input ngDefaultControl label="Телефон*" [formControl]="phone"/>
+    <app-input ngDefaultControl label="Модель устройства" [formControl]="phoneType"/>
+    <app-input ngDefaultControl label="Неисправность" type="textarea" [formControl]="whatsWrong"/>
+
+    <button [disabled]="form.invalid" type="submit" (click)="onSubmit()">Заказать звонок</button>
+  </form>
   <small>Нажимая «Заказать звонок», Вы соглашаетесь на обработку указанных данных ИП «Фарахов Марсель Радикович» на условиях Политики конфиденциальности.</small>
 </div>
