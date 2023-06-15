@@ -10,4 +10,5 @@ export class MainPageServicesItemComponent {
   @Input() title!: string;
   @Input() payload!: string;
   @Input() price!: string;
+  @Input() priceBold: boolean = false;
 }
