@@ -14,7 +14,7 @@ export class OrderCallModalDirective {
   protected openModal(): void {
     const modalRef = this.modalService.open(OrderCallModalContentComponent, { ariaLabelledBy: 'modal-basic-title', size: "lg" });
     const instance = modalRef.componentInstance as OrderCallModalContentComponent;
-    instance.formSubmitted.subscribe(_ => {
+    instance.closed.subscribe(_ => {
       modalRef.close();
     })
   }

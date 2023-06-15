@@ -6,5 +6,5 @@ import {Component, EventEmitter, Output} from '@angular/core';
   styleUrls: ['./order-call-modal-content.component.scss']
 })
 export class OrderCallModalContentComponent {
-  @Output() formSubmitted: EventEmitter<null> = new EventEmitter<null>();
+  @Output() closed: EventEmitter<null> = new EventEmitter<null>();
 }

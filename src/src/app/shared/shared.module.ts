@@ -49,6 +49,7 @@ import { TimerIconComponent } from './components/icons/timer-icon/timer-icon.com
 import { VolumeIconComponent } from './components/icons/volume-icon/volume-icon.component';
 import { OrderCallModalContentComponent } from './components/order-call-modal-content/order-call-modal-content.component';
 import { OrderCallModalDirective } from './directives/order-call-modal.directive';
+import { XmarkIconComponent } from './components/icons/xmark-icon/xmark-icon.component';
 
 
 @NgModule({
@@ -96,7 +97,8 @@ import { OrderCallModalDirective } from './directives/order-call-modal.directive
     TimerIconComponent,
     VolumeIconComponent,
     OrderCallModalContentComponent,
-    OrderCallModalDirective
+    OrderCallModalDirective,
+    XmarkIconComponent
   ],
   imports: [
     CommonModule,

@@ -1,10 +1,13 @@
 <div class="p-sm-5 p-4 app-black-color d-flex flex-column gap-3">
-  <h3>Заказать звонок</h3>
+  <div class="d-flex gap-3 justify-content-between align-items-center">
+    <h4>Заказать звонок</h4>
+    <app-xmark-icon style="font-size: 1.5rem" (click)="closed.emit()"/>
+  </div>
   <p>Оставьте свои контактные данные и наш директор свяжется с Вами в течение 15 минут.</p>
   <app-input label="Как Вас зовут*"/>
   <app-input label="Телефон*" type="tel"/>
   <app-input label="Модель устройства"/>
   <app-input label="Неисправность" type="textarea"/>
-  <button (click)="formSubmitted.emit()">Отправить</button>
+  <button (click)="closed.emit()">Отправить</button>
   <small>Нажимая «Заказать звонок», Вы соглашаетесь на обработку указанных данных ИП «Фарахов Марсель Радикович» на условиях Политики конфиденциальности.</small>
 </div>
