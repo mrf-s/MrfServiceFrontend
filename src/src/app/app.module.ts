@@ -16,6 +16,7 @@ import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import {NgxMaskDirective, NgxMaskPipe, provideNgxMask} from "ngx-mask";
 import {FormsModule} from "@angular/forms";
+import {HttpClientModule} from "@angular/common/http";
 
 registerLocaleData(localeRu, 'ru');
 
@@ -36,7 +37,8 @@ registerLocaleData(localeRu, 'ru');
     FormsModule,
     NgbModule,
     NgxMaskDirective,
-    NgxMaskPipe
+    NgxMaskPipe,
+    HttpClientModule
   ],
   providers: [
       { provide: LOCALE_ID, useValue: 'ru' },

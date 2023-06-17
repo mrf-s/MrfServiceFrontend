@@ -1,5 +1,6 @@
 import {Component, EventEmitter, Output} from '@angular/core';
 import {AbstractControl, FormControl, FormGroup, ValidationErrors, Validators} from "@angular/forms";
+import {BackendService} from "../../services/backend.service";
 
 @Component({
   selector: 'app-order-call-modal-content',
@@ -7,20 +8,23 @@ import {AbstractControl, FormControl, FormGroup, ValidationErrors, Validators} f
   styleUrls: ['./order-call-modal-content.component.scss']
 })
 export class OrderCallModalContentComponent {
-  private requiredError: string = 'Это поле обязательно'
   @Output() closed: EventEmitter<null> = new EventEmitter<null>();
   protected name: FormControl = new FormControl('', Validators.required);
-  protected phone: FormControl = new FormControl('', Validators.required);
-  protected phoneType: FormControl = new FormControl();
+  protected number: FormControl = new FormControl('', Validators.required);
+  protected model: FormControl = new FormControl();
   protected whatsWrong: FormControl = new FormControl();
   protected form: FormGroup = new FormGroup({
     name: this.name,
-    phone: this.phone,
-    phoneType: this.phoneType,
+    number: this.number,
+    model: this.model,
     whatsWrong: this.whatsWrong
   });
 
+  constructor(private backend: BackendService) {
+  }
+
   protected onSubmit(): void {
+    this.backend.orderCall(this.form.value.name, this.form.value.number, this.form.value.model, this.form.value.whatsWrong).subscribe();
     this.closed.emit();
   }
 }

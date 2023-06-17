@@ -7,8 +7,8 @@
   <form [formGroup]="form" class="d-flex gap-3 justify-content-between flex-column">
 
     <app-input ngDefaultControl label="Как Вас зовут*" [formControl]="name"/>
-    <app-number-input ngDefaultControl label="Телефон*" [formControl]="phone"/>
-    <app-input ngDefaultControl label="Модель устройства" [formControl]="phoneType"/>
+    <app-number-input ngDefaultControl label="Телефон*" [formControl]="number"/>
+    <app-input ngDefaultControl label="Модель устройства" [formControl]="model"/>
     <app-input ngDefaultControl label="Неисправность" type="textarea" [formControl]="whatsWrong"/>
 
     <button [disabled]="form.invalid" type="submit" (click)="onSubmit()">Заказать звонок</button>
