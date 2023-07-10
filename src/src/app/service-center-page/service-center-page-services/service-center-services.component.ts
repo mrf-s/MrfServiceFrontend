@@ -2,11 +2,11 @@ import { Component } from '@angular/core';
 import {ClockIconComponent} from "../../shared/components/icons/clock-icon/clock-icon.component";
 
 @Component({
-  selector: 'app-main-page-services',
-  templateUrl: './main-page-services.component.html',
-  styleUrls: ['./main-page-services.component.scss']
+  selector: 'app-service-center-page-services',
+  templateUrl: './service-center-services.component.html',
+  styleUrls: ['./service-center-services.component.scss']
 })
-export class MainPageServicesComponent {
+export class ServiceCenterServicesComponent {
 
   protected readonly ClockIconComponent = ClockIconComponent;
 }

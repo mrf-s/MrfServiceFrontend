@@ -7,11 +7,11 @@ declare var require: any
 const DG: any = require('2gis-maps');
 
 @Component({
-  selector: 'app-main-page-contacts',
-  templateUrl: './main-page-contacts.component.html',
-  styleUrls: ['./main-page-contacts.component.scss']
+  selector: 'app-service-center-page-contacts',
+  templateUrl: './service-center-page-contacts.component.html',
+  styleUrls: ['./service-center-page-contacts.component.scss']
 })
-export class MainPageContactsComponent implements OnInit{
+export class ServiceCenterPageContactsComponent implements OnInit{
   constructor(public info: InfoProviderService, private map: MapFactoryService, private modalService: NgbModal) {
   }
 

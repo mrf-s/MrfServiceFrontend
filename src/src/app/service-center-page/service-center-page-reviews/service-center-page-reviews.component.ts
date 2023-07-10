@@ -11,14 +11,14 @@ import {ReviewModel} from "../../shared/components/review/review-model";
 import {ReviewsProvider} from "../../shared/services/reviews-provider";
 import {OwlOptions} from "ngx-owl-carousel-o";
 import {ChevronUpIconComponent} from "../../shared/components/icons/chevron-up-icon/chevron-up-icon.component";
-import {MainPageSectionComponent} from "../main-page-section/main-page-section.component";
+import {ServiceCenterPageSectionComponent} from "../service-center-page-section/service-center-page-section.component";
 
 @Component({
-  selector: 'app-main-page-reviews',
-  templateUrl: './main-page-reviews.component.html',
-  styleUrls: ['./main-page-reviews.component.scss']
+  selector: 'app-service-center-page-reviews',
+  templateUrl: './service-center-page-reviews.component.html',
+  styleUrls: ['./service-center-page-reviews.component.scss']
 })
-export class MainPageReviewsComponent {
+export class ServiceCenterPageReviewsComponent {
   owlCarouselOptions: OwlOptions = {
     loop: true,
     mouseDrag: false,

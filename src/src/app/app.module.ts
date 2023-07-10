@@ -3,7 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import {SharedModule} from "./shared/shared.module";
-import {MainPageModule} from "./main-page/main-page.module";
+import {ServiceCenterPageModule} from "./service-center-page/service-center-page.module";
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import {NavbarModule} from "./navbar/navbar.module";
 import {FooterModule} from "./footer/footer.module";
@@ -28,7 +28,7 @@ registerLocaleData(localeRu, 'ru');
     BrowserModule,
     AppRoutingModule,
     SharedModule,
-    MainPageModule,
+    ServiceCenterPageModule,
     FontAwesomeModule,
     NavbarModule,
     FooterModule,
