@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import {InfoProviderService} from "../shared/services/info-provider.service";
+import {InfoProviderService} from "../../shared/services/info-provider.service";
 
 @Component({
   selector: 'app-service-center-page',

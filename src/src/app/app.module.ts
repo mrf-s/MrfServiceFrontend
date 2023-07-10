@@ -3,7 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import {SharedModule} from "./shared/shared.module";
-import {ServiceCenterPageModule} from "./service-center-page/service-center-page.module";
+import {ServiceCenterPageModule} from "./pages/service-center-page/service-center-page.module";
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import {NavbarModule} from "./navbar/navbar.module";
 import {FooterModule} from "./footer/footer.module";
@@ -17,7 +17,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import {NgxMaskDirective, NgxMaskPipe, provideNgxMask} from "ngx-mask";
 import {FormsModule} from "@angular/forms";
 import {HttpClientModule} from "@angular/common/http";
-import {NavbarFooterPageModule} from "./navbar-footer-page/navbar-footer-page.module";
+import {NavbarFooterPageModule} from "./pages/navbar-footer-page/navbar-footer-page.module";
 
 registerLocaleData(localeRu, 'ru');
 

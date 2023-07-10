@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import {ClockIconComponent} from "../../shared/components/icons/clock-icon/clock-icon.component";
+import {ClockIconComponent} from "../../../shared/components/icons/clock-icon/clock-icon.component";
 
 @Component({
   selector: 'app-service-center-page-services',

@@ -1,6 +1,6 @@
 import {Component, OnInit} from '@angular/core';
-import {InfoProviderService} from "../../shared/services/info-provider.service";
-import {MapFactoryService} from "../../shared/services/map-factory.service";
+import {InfoProviderService} from "../../../shared/services/info-provider.service";
+import {MapFactoryService} from "../../../shared/services/map-factory.service";
 import {ModalDismissReasons, NgbModal} from "@ng-bootstrap/ng-bootstrap";
 
 declare var require: any

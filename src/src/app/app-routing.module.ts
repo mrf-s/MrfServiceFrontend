@@ -1,9 +1,8 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import {AppComponent} from "./app.component";
-import {ServiceCenterPageComponent} from "./service-center-page/service-center-page.component";
-import {NavbarFooterPageModule} from "./navbar-footer-page/navbar-footer-page.module";
-import {NavbarFooterPageComponent} from "./navbar-footer-page/navbar-footer-page.component";
+import {ServiceCenterPageComponent} from "./pages/service-center-page/service-center-page.component";
+import {NavbarFooterPageComponent} from "./pages/navbar-footer-page/navbar-footer-page.component";
 
 const routes: Routes = [
   {path: '', component: NavbarFooterPageComponent, children: [

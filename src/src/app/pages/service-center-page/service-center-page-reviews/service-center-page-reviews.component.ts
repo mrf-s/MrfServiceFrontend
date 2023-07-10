@@ -6,11 +6,11 @@ import {
   ViewChild,
   ViewContainerRef
 } from '@angular/core';
-import {asArray} from "../../shared/helpers/ngfor-array-helpers";
-import {ReviewModel} from "../../shared/components/review/review-model";
-import {ReviewsProvider} from "../../shared/services/reviews-provider";
+import {asArray} from "../../../shared/helpers/ngfor-array-helpers";
+import {ReviewModel} from "../../../shared/components/review/review-model";
+import {ReviewsProvider} from "../../../shared/services/reviews-provider";
 import {OwlOptions} from "ngx-owl-carousel-o";
-import {ChevronUpIconComponent} from "../../shared/components/icons/chevron-up-icon/chevron-up-icon.component";
+import {ChevronUpIconComponent} from "../../../shared/components/icons/chevron-up-icon/chevron-up-icon.component";
 import {ServiceCenterPageSectionComponent} from "../service-center-page-section/service-center-page-section.component";
 
 @Component({
