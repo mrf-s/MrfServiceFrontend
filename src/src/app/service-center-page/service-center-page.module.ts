@@ -12,7 +12,7 @@ import { ServiceCenterPageReviewsComponent } from './service-center-page-reviews
 import {CarouselModule} from "ngx-owl-carousel-o";
 import { ServiceCenterPageAboutUsComponent } from './service-center-page-about-us/service-center-page-about-us.component';
 import {NgbModalModule} from "@ng-bootstrap/ng-bootstrap";
-import {ServiceCenterPageRoutingModule} from "./service-center-page-routing.module";
+import {RouterModule} from "@angular/router";
 
 
 
@@ -37,7 +37,7 @@ import {ServiceCenterPageRoutingModule} from "./service-center-page-routing.modu
         NavbarModule,
       NgbModalModule,
       CarouselModule,
-      ServiceCenterPageRoutingModule
+      RouterModule
     ]
 })
 export class ServiceCenterPageModule { }

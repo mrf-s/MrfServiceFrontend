@@ -17,6 +17,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import {NgxMaskDirective, NgxMaskPipe, provideNgxMask} from "ngx-mask";
 import {FormsModule} from "@angular/forms";
 import {HttpClientModule} from "@angular/common/http";
+import {NavbarFooterPageModule} from "./navbar-footer-page/navbar-footer-page.module";
 
 registerLocaleData(localeRu, 'ru');
 
@@ -38,7 +39,8 @@ registerLocaleData(localeRu, 'ru');
     NgbModule,
     NgxMaskDirective,
     NgxMaskPipe,
-    HttpClientModule
+    HttpClientModule,
+    NavbarFooterPageModule
   ],
   providers: [
       { provide: LOCALE_ID, useValue: 'ru' },
