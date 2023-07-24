@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { ButtonComponent } from './components/button/button.component';
 import { BillboardComponent } from './components/billboard/billboard.component';
 import { ClockIconComponent } from './components/icons/clock-icon/clock-icon.component';
 import {FontAwesomeModule} from "@fortawesome/angular-fontawesome";
@@ -64,7 +63,6 @@ import { StringOrTemplateComponent } from './components/string-or-template/strin
 
 @NgModule({
   declarations: [
-    ButtonComponent,
     BillboardComponent,
     ClockIconComponent,
     ShieldIconComponent,
@@ -130,7 +128,6 @@ import { StringOrTemplateComponent } from './components/string-or-template/strin
     AutosizeModule
   ],
   exports: [
-    ButtonComponent,
     BillboardComponent,
     ClockIconComponent,
     ShieldIconComponent,

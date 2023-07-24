@@ -1,5 +1,6 @@
 import {Injectable} from '@angular/core';
 import {NgbModal, NgbModalRef} from "@ng-bootstrap/ng-bootstrap";
+import {ClosableModal} from "../components/modals/closableModal";
 
 @Injectable({
   providedIn: 'root'
@@ -11,7 +12,15 @@ export class ModalService {
     const modal: NgbModalRef = this.modalService.open(component, {ariaLabelledBy: 'modal-basic-title', size: options.size});
     const instance: TComponent = modal.componentInstance as TComponent;
 
+    if (this.closableComponentGuard(instance)) {
+      instance.close.subscribe(_ => modal.close());
+    }
+
     return new ModalReturn<TComponent>(modal, component);
+  }
+
+  public closableComponentGuard(component: any): component is ClosableModal {
+    return (<ClosableModal>component).close !== undefined;
   }
 }
 
