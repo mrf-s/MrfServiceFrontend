@@ -5,34 +5,37 @@
     <div class="col-12 col-md-6">
       <div class="app-card app-black-color d-inline-block">
         <h3 class="mb-4">Контакты</h3>
-        <div class="mb-3">
-          <p class="app-caption mb-2">Контактный телефон (WhatsApp)</p>
-          <app-number class="fw-medium"/>
+        <div>
+          <app-caption-label-text label="Контактный телефон (WhatsApp)">
+            <app-number-text-link/>
+          </app-caption-label-text>
           <hr>
         </div>
-        <div class="mb-3">
-          <p class="app-caption mb-2">Telegram</p>
-          <a class="fw-medium" appNavigateTelegram>{{info.telegram}}</a>
+        <div class="mt-3">
+          <app-caption-label-text label="Telegram">
+            <app-telegram-account-text/>
+          </app-caption-label-text>
           <hr>
         </div>
-        <div class="mb-3">
-          <p class="app-caption mb-2">ВКонтакте</p>
-          <a class="fw-medium" appNavigateVk>{{info.vkNickName}}</a>
+        <div class="mt-3">
+          <app-caption-label-text label="ВКонтакте">
+            <app-vk-page-text/>
+          </app-caption-label-text>
           <hr>
         </div>
-        <div class="mb-3">
-          <p class="app-caption mb-2">Адрес</p>
-          <p class="fw-medium mb-2">{{info.address}}</p>
+        <div class="mt-3">
+          <app-caption-label-text label="Адрес">
+            <app-address-text/>
+          </app-caption-label-text>
           <hr>
         </div>
-        <div class="mb-4">
-          <p class="app-caption mb-2">Время работы</p>
-          <div class="fw-medium mb-2">
-            <p>{{info.workTime}}</p>
-          </div>
+        <div class="mt-3">
+          <app-caption-label-text label="Время работы">
+            {{info.workTime}}
+          </app-caption-label-text>
           <hr>
         </div>
-        <button appOrderCallModal>Заказать звонок</button>
+        <button appContactUsModal class="mt-3">Связаться с нами</button>
       </div>
     </div>
     <div class="col-12 col-md-6">

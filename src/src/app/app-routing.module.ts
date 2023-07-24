@@ -9,7 +9,8 @@ const routes: Routes = [
   {path: '', component: NavbarFooterPageComponent, children: [
       {path: '', component: ServiceCenterPageComponent},
     ]},
-  {path: 'card', component: LinktreePageComponent}
+  // {path: 'card', component: LinktreePageComponent}
+  {path: '**', redirectTo: ''}
 ];
 
 @NgModule({
