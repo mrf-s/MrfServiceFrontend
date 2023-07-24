@@ -6,7 +6,7 @@ import {
   ViewChild,
   ViewContainerRef
 } from '@angular/core';
-import {asArray} from "../../../shared/helpers/ngfor-array-helpers";
+import {asArray} from "../../../shared/helpers/helpers";
 import {ReviewModel} from "../../../shared/components/review/review-model";
 import {ReviewsProvider} from "../../../shared/services/reviews-provider";
 import {OwlOptions} from "ngx-owl-carousel-o";

@@ -26,11 +26,11 @@
       <div class="col-12 col-sm-8 col-md-4">
         <h3 class="mb-2">Контакты</h3>
         <div class="d-flex gap-3 align-items-center mb-2">
-          <app-number class="d-block fw-medium"></app-number>
+          <app-number-text-link class="d-block fw-medium"></app-number-text-link>
           <app-contact-circles class="d-flex gap-2"></app-contact-circles>
         </div>
         <div>
-          <p class="mb-2">{{info.address}}</p>
+          <p class="mb-2">{{info.addressRender()}}</p>
           <p>{{info.workTime}}</p>
         </div>
       </div>

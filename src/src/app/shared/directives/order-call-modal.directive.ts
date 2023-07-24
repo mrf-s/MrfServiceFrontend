@@ -1,22 +1,22 @@
 import {Directive, HostListener} from '@angular/core';
 import {NgbModal} from "@ng-bootstrap/ng-bootstrap";
 import {
-  OrderCallModalContentComponent
-} from "../components/order-call-modal-content/order-call-modal-content.component";
+  OrderCallModalComponent
+} from "../components/modals/order-call-modal/order-call-modal.component";
+import {ModalReturn, ModalService} from "../services/modal.service";
 
 @Directive({
   selector: '[appOrderCallModal]'
 })
 export class OrderCallModalDirective {
-  constructor(private modalService: NgbModal) {
+  constructor(private modalService: ModalService) {
   }
 
   protected openModal(): void {
-    const modalRef = this.modalService.open(OrderCallModalContentComponent, { ariaLabelledBy: 'modal-basic-title', size: "lg" });
-    const instance = modalRef.componentInstance as OrderCallModalContentComponent;
-    instance.closed.subscribe(_ => {
-      modalRef.close();
-    })
+    const modal: ModalReturn<OrderCallModalComponent> = this.modalService.openModal<OrderCallModalComponent>(OrderCallModalComponent);
+    modal.component.onFormSubmit.subscribe(_ => {
+      modal.close();
+    });
   }
 
   @HostListener('click', ['$event.target'])
