@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { ButtonComponent } from './components/button/button.component';
 import { BillboardComponent } from './components/billboard/billboard.component';
 import { ClockIconComponent } from './components/icons/clock-icon/clock-icon.component';
 import {FontAwesomeModule} from "@fortawesome/angular-fontawesome";
@@ -18,7 +17,7 @@ import { ComputerIconComponent } from './components/icons/computer-icon/computer
 import { WindowsIconComponent } from './components/icons/windows-icon/windows-icon.component';
 import { PremiumIconComponent } from './components/icons/premium-icon/premium-icon.component';
 import { LogoComponent } from './components/logo/logo.component';
-import { NumberComponent } from './components/number/number.component';
+import { NumberTextLinkComponent } from './components/number-text-link/number-text-link.component';
 import { NumberNavigateDirective } from './directives/number-navigate.directive';
 import { TelegramIconComponent } from './components/icons/telegram-icon/telegram-icon.component';
 import { VkIconComponent } from './components/icons/vk-icon/vk-icon.component';
@@ -47,16 +46,23 @@ import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import {NgxMaskDirective} from "ngx-mask";
 import { TimerIconComponent } from './components/icons/timer-icon/timer-icon.component';
 import { VolumeIconComponent } from './components/icons/volume-icon/volume-icon.component';
-import { OrderCallModalContentComponent } from './components/order-call-modal-content/order-call-modal-content.component';
+import { OrderCallModalComponent } from './components/modals/order-call-modal/order-call-modal.component';
 import { OrderCallModalDirective } from './directives/order-call-modal.directive';
 import { XmarkIconComponent } from './components/icons/xmark-icon/xmark-icon.component';
 import {AutosizeModule} from "ngx-autosize";
 import { NumberInputComponent } from './components/form-inputs/number-input/number-input.component';
+import { CaptionLabelTextComponent } from './components/caption-label-text/caption-label-text.component';
+import { ContactUsModalComponent } from './components/modals/contact-us-modal/contact-us-modal.component';
+import { TelegramAccountTextComponent } from './components/smart-texts/telegram-account-text/telegram-account-text.component';
+import { VkPageTextComponent } from './components/smart-texts/vk-page-text/vk-page-text.component';
+import { AddressTextComponent } from './components/smart-texts/address-text/address-text.component';
+import { ContactUsModalDirective } from './directives/contact-us-modal.directive';
+import { ModalBaseComponent } from './components/modals/modal-base/modal-base.component';
+import { StringOrTemplateComponent } from './components/string-or-template/string-or-template.component';
 
 
 @NgModule({
   declarations: [
-    ButtonComponent,
     BillboardComponent,
     ClockIconComponent,
     ShieldIconComponent,
@@ -71,7 +77,7 @@ import { NumberInputComponent } from './components/form-inputs/number-input/numb
     WindowsIconComponent,
     PremiumIconComponent,
     LogoComponent,
-    NumberComponent,
+    NumberTextLinkComponent,
     NumberNavigateDirective,
     TelegramIconComponent,
     VkIconComponent,
@@ -98,10 +104,18 @@ import { NumberInputComponent } from './components/form-inputs/number-input/numb
     InputComponent,
     TimerIconComponent,
     VolumeIconComponent,
-    OrderCallModalContentComponent,
+    OrderCallModalComponent,
     OrderCallModalDirective,
     XmarkIconComponent,
-    NumberInputComponent
+    NumberInputComponent,
+    CaptionLabelTextComponent,
+    ContactUsModalComponent,
+    TelegramAccountTextComponent,
+    VkPageTextComponent,
+    AddressTextComponent,
+    ContactUsModalDirective,
+    ModalBaseComponent,
+    StringOrTemplateComponent
   ],
   imports: [
     CommonModule,
@@ -113,36 +127,40 @@ import { NumberInputComponent } from './components/form-inputs/number-input/numb
     ReactiveFormsModule,
     AutosizeModule
   ],
-    exports: [
-        ButtonComponent,
-        BillboardComponent,
-        ClockIconComponent,
-        ShieldIconComponent,
-        WalletIconComponent,
-        PhoneIconComponent,
-        BurgerComponent,
-        PrinterIconComponent,
-        AirpodsIconComponent,
-        SmartphoneIconComponent,
-        ComputerIconComponent,
-        WindowsIconComponent,
-        PremiumIconComponent,
-        LogoComponent,
-        NumberNavigateDirective,
-        NumberComponent,
-        ContactCirclesComponent,
-        StarsComponent,
-        ReviewComponent,
-        ChevronUpIconComponent,
-        YandexBadgeComponent,
-        YandexMapComponent,
-        InputComponent,
-        TimerIconComponent,
-        VolumeIconComponent,
-        NavigateTelegramDirective,
-        NavigateVkDirective,
-        OrderCallModalDirective,
-        NavigateWhatsUpDirective
-    ]
+  exports: [
+    BillboardComponent,
+    ClockIconComponent,
+    ShieldIconComponent,
+    WalletIconComponent,
+    PhoneIconComponent,
+    BurgerComponent,
+    PrinterIconComponent,
+    AirpodsIconComponent,
+    SmartphoneIconComponent,
+    ComputerIconComponent,
+    WindowsIconComponent,
+    PremiumIconComponent,
+    LogoComponent,
+    NumberNavigateDirective,
+    NumberTextLinkComponent,
+    ContactCirclesComponent,
+    StarsComponent,
+    ReviewComponent,
+    ChevronUpIconComponent,
+    YandexBadgeComponent,
+    YandexMapComponent,
+    InputComponent,
+    TimerIconComponent,
+    VolumeIconComponent,
+    NavigateTelegramDirective,
+    NavigateVkDirective,
+    OrderCallModalDirective,
+    NavigateWhatsUpDirective,
+    CaptionLabelTextComponent,
+    TelegramAccountTextComponent,
+    VkPageTextComponent,
+    AddressTextComponent,
+    ContactUsModalDirective
+  ]
 })
 export class SharedModule { }

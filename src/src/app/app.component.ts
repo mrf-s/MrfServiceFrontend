@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import * as Mustache from 'mustache'
 
 @Component({
   selector: 'app-root',

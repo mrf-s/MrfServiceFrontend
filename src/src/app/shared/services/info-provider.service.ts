@@ -1,4 +1,6 @@
-import { Injectable } from '@angular/core';
+import {Injectable} from '@angular/core';
+import {AddressFields} from "../helpers/textFormatters/address/addressFields";
+import {AddressFormatter} from "../helpers/textFormatters/address/addressFormatter";
 
 @Injectable({
   providedIn: 'root'
@@ -6,6 +8,16 @@ import { Injectable } from '@angular/core';
 export class InfoProviderService {
   private _phoneNumber: string = '+79377748577';
   private _formattedPhoneNumber: string = '+7 (937) 774-85-77'
+  private _address: AddressFields = {
+    city: 'Казань',
+    district: 'Авиастроительный',
+    street: 'Чапаева',
+    houseNumber: 16,
+    doorway: 1,
+    floor: 3,
+    doorNumber: 10
+  }
+  private _defaultAddressFormatter: AddressFormatter = new AddressFormatter();
 
   public get phoneNumber(): string {
     return this._phoneNumber;
@@ -63,11 +75,16 @@ export class InfoProviderService {
     return 'https://wa.me/79377748577';
   }
 
-  public get address(): string {
-    return 'г. Казань, ул. Чапаева, Авиастроительный район, дом 16, подъезд 1, домофон 10В, этаж 3, квартира 10 (Перед Вашим приходом, просьба позвонить или написать)'
+  public addressRender(addressFormatter: AddressFormatter = this._defaultAddressFormatter): string {
+    return addressFormatter.render(this.address);
+  }
+
+  public get address(): AddressFields {
+    return this._address;
   }
 
   public get workTime(): string {
     return 'Ежедневно с 10:00 до 00:00, без выходных';
   }
 }
+

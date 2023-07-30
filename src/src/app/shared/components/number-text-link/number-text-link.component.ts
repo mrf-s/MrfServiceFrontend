@@ -2,11 +2,11 @@ import {Component, Input} from '@angular/core';
 import {InfoProviderService} from "../../services/info-provider.service";
 
 @Component({
-  selector: 'app-number',
-  templateUrl: './number.component.html',
-  styleUrls: ['./number.component.scss']
+  selector: 'app-number-text-link',
+  templateUrl: './number-text-link.component.html',
+  styleUrls: ['./number-text-link.component.scss']
 })
-export class NumberComponent {
+export class NumberTextLinkComponent {
   constructor(public info: InfoProviderService) {
   }
 }
