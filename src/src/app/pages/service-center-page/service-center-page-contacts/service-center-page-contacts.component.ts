@@ -16,7 +16,7 @@ export class ServiceCenterPageContactsComponent implements OnInit{
   }
 
   ngOnInit(): void {
-    // this.map.addMapToHtml('map');
+    this.map.addMapToHtml('map');
   }
 
   protected openModal(content: any): void {
